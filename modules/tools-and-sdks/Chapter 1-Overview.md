@@ -1,7 +1,3 @@
-Here's your revised content with **SDKs listed as a separate property** for each tool and consistent parallel structure throughout the chapter:
-
----
-
 # Chapter 1: Tools & SDKs Overview
 
 High-level overview of the AI tools and SDKs available, with a focus on **OpenAI** and **Microsoft** tools. This chapter will help you understand the landscape of AI tools and how they can be used together.
