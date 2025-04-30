@@ -95,12 +95,12 @@ Bias detection, privacy, responsible use, and environmental impact in evaluation
 
 - **Team Exercise**
     - TODO: Pick Scenario
-    - Implement Simple (Agentic solution - use Kingfard's?)
+    - Implement simple (agentic) solution - (use Kingfard's?)
     - Create Synthetic Evaluation Dataset
     - Create Evaluations in Azure AI Foundry
     - Create Evaluations using Azure Evaluation SDK [^10]
     - Create Evaluations using the Azure Project SDK [^11]
-    - Evalute with Real-World Data [??] 
+    - Evaluate with Real-World Data [??] 
     - Evaluate Content Safety [??]
     - Develop an Evaluation Flow [^12]
 
