@@ -1,7 +1,7 @@
 ### 1. Introduction to Generative AI Evaluation
 
 - **Why Evaluate Generative AI Applications?**
-Importance of evaluation for quality, safety, governance, and ethical use[^1].
+Importance of evaluation for quality, safety, governance, and ethical use.
 
 ---
 
