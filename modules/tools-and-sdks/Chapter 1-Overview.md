@@ -6,14 +6,13 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 
 ## OpenAI Ecosystem
 
-### 1. OpenAI API & ChatGPT
+### 1. OpenAI API
 
 - **Purpose**: Access OpenAI’s core models for text, image, and audio generation  
 - **Key Features**:
   - Chat/completion (GPT-4, GPT-3.5)
   - Function calling, JSON mode
   - Embeddings and file uploads
-  - Assistants API (multi-turn agents with memory/tools)
   - DALL·E (text-to-image + editing), Whisper (speech-to-text)
 - **Use Cases**: Conversational AI, content generation, code assistants, summarization, search
 - **SDKs**: `openai` Python SDK, Node.js SDK, REST API
@@ -21,20 +20,32 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 
 ---
 
-### 2. Assistants API
+### 2. ChatGPT
 
-- **Purpose**: Build persistent, goal-driven AI agents with memory and tools  
+- **Purpose**: Conversational AI with memory and plugins
 - **Key Features**:
-  - Threads, messages, and runs for conversations
-  - Built-in tools: `code_interpreter`, `retrieval`, `function_calling`
-  - File upload and persistent assistant configuration
-- **Use Cases**: Dev copilots, research bots, customer support agents
-- **SDKs**: Included in `openai` Python SDK (`openai.beta.assistants`)
-- **Access / Languages**: Python, Node.js, REST
+  - Chat interface with memory
+  - Plugin ecosystem (web browsing, code interpreter, etc.)
+  - Custom GPTs (fine-tuned models)
+- **Use Cases**: Customer support, personal assistants, interactive applications
+- **SDKs**: `openai.ChatCompletion.create()` in Python SDK; also available in ChatGPT UI
+- **Access / Languages**: Python, JavaScript, ChatGPT UI
 
 ---
 
-### 3. Whisper (Speech-to-Text)
+### 3. Embeddings API
+
+- **Purpose**: Create vector embeddings for semantic search and RAG  
+- **Key Features**:
+  - Models: `text-embedding-3-small`, `text-embedding-3-large`
+  - Token-efficient and high-quality
+- **Use Cases**: Semantic search, document clustering, retrieval-augmented generation
+- **SDKs**: `openai.Embedding.create()` in Python/Node.js SDK
+- **Access / Languages**: Python, JavaScript, REST
+
+---
+
+### 4. Whisper
 
 - **Purpose**: Transcribe audio/video to text  
 - **Key Features**:
@@ -47,7 +58,7 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 
 ---
 
-### 4. DALL·E
+### 5. DALL·E
 
 - **Purpose**: Generate and edit images from natural language prompts  
 - **Key Features**:
@@ -60,14 +71,14 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 
 ---
 
-### 5. Embeddings API
+### 6. Agents
 
 - **Purpose**: Create vector embeddings for semantic search and RAG  
 - **Key Features**:
   - Models: `text-embedding-3-small`, `text-embedding-3-large`
   - Token-efficient and high-quality
 - **Use Cases**: Semantic search, document clustering, retrieval-augmented generation
-- **SDKs**: `openai.Embedding.create()` in Python/Node.js SDK
+- **SDKs**: `openai-agents` in Python SDK
 - **Access / Languages**: Python, JavaScript, REST
 
 ---
@@ -82,7 +93,7 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
   - RBAC, logging, enterprise security and compliance
   - Integration with Azure tools and services
 - **Use Cases**: Secure LLM deployment, enterprise AI applications, regulated industries
-- **SDKs**: Azure SDKs (Python, .NET, JavaScript, Java), REST API, CLI
+- **SDKs**: `openai`, Azure SDKs (Python, .NET, JavaScript, Java), REST API, CLI
 - **Access / Languages**: Python, .NET, JavaScript, Java, Azure Portal
 
 ---
@@ -100,7 +111,7 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 
 ---
 
-### 3. Azure Cognitive Services
+### 3. Azure AI Services
 
 - **Purpose**: Prebuilt AI services for language, vision, speech, and decision-making  
 - **Key Features**:
@@ -120,7 +131,7 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
   - Memory and skills management
   - Planner and workflow orchestration
 - **Use Cases**: Task automation, AI agents, workflow builders
-- **SDKs**: Semantic Kernel SDKs (C#, Python, Java - preview)
+- **SDKs**: [Semantic Kernel SDKs](https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide?pivots=programming-language-python) (C#, Python, Java - preview)
 - **Access / Languages**: C#, Python, Java; open source on GitHub
 
 ---
@@ -132,7 +143,7 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
   - Agents: AssistantAgent, UserProxyAgent, etc.
   - Supports tools, custom APIs, memory, orchestration
 - **Use Cases**: Multi-agent simulations, planning systems, AI research tools
-- **SDKs**: `pyautogen` Python SDK
+- **SDKs**: [autogenstudio](https://github.com/microsoft/autogen) Python SDK
 - **Access / Languages**: Python; open source on GitHub
 
 ---
@@ -150,14 +161,13 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 
 ---
 
-## Other Interoperable Tools
+## Other Tools
 
 | Tool                        | Purpose                                          | Compatible With                                     |
 |-----------------------------|--------------------------------------------------|-----------------------------------------------------|
-| **LangChain**              | LLM orchestration and agent framework           | OpenAI, Azure OpenAI, Anthropic, Hugging Face       |
-| **LlamaIndex**             | Retrieval-augmented generation (RAG)            | OpenAI, Anthropic, vector DBs                       |
-| **Hugging Face Transformers** | Open models and datasets                      | Interoperable via APIs or local hosting             |
-| **Replicate**              | Unified API for running ML models               | OpenAI, Anthropic, Stable Diffusion, Whisper, etc.  |
-| **Anthropic Claude API**   | Conversational and agentic LLMs with long context | LangChain, LlamaIndex, REST-based apps              |
+| [**LangChain**](https://www.langchain.com/)             | LLM orchestration and agent framework           | OpenAI, Azure OpenAI, Anthropic, Hugging Face       |
+| [**LlamaIndex**](https://www.llamaindex.ai/)             | Retrieval-augmented generation (RAG)            | OpenAI, Anthropic, vector DBs                       |
+| [**Hugging Face Transformers**](https://huggingface.co/docs/transformers/en/index) | Open models and datasets                      | Interoperable via APIs or local hosting             |
+| [**Anthropic Claude API**](https://docs.anthropic.com/en/home)   | Conversational and agentic LLMs with long context | LangChain, LlamaIndex, REST-based apps              |
 
 ---
