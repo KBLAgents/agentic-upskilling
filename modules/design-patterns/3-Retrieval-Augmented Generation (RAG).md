@@ -72,51 +72,14 @@ By the end of this module, learners will be able to:
 ### 🧪 Hands-On Lab: Build a RAG-Powered Q&A Bot
 
 **Goal:**  
-Create a document-based question answering bot using Azure AI Search and GPT-4.
-
-**Steps:**
-
-1. **Prepare your document corpus**
-   - Upload sample PDFs (e.g., policies, FAQs) to Azure Blob Storage
-
-2. **Set up Azure AI Search**
-   - Create an index and enable semantic search
-   - Configure skillset for metadata extraction
-
-3. **Embed documents using Python**  
-```python
-from openai import OpenAIEmbeddings
-from langchain.vectorstores.azuresearch import AzureSearch
-from langchain.document_loaders import PyPDFLoader
-from langchain.text_splitter import RecursiveCharacterTextSplitter
-
-# Load and chunk
-loader = PyPDFLoader("handbook.pdf")
-pages = loader.load_and_split()
-splitter = RecursiveCharacterTextSplitter(chunk_size=500, chunk_overlap=50)
-chunks = splitter.split_documents(pages)
-
-# Embed
-embeddings = OpenAIEmbeddings()
-vectorstore = AzureSearch(azure_search_config, embeddings)
-vectorstore.add_documents(chunks)
-```
-
-4. **Query pipeline**
-```python
-retrieved_docs = vectorstore.similarity_search("What’s our refund policy?", k=3)
-context = "\n".join([doc.page_content for doc in retrieved_docs])
-
-response = openai.ChatCompletion.create(
-    model="gpt-4",
-    messages=[{"role": "user", "content": f"Answer based on:\n{context}"}]
-)
-print(response['choices'][0]['message']['content'])
-```
+[Build a RAG solution using Azure AI Search and GPT-4](https://learn.microsoft.com/en-us/azure/search/tutorial-rag-build-solution).
 
 ---
 
 ### 📘 Resources
+- [What Is Retrieval-Augmented Generation (RAG)](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview?tabs=docs)
+- [Retrieval Augmented Generation (RAG) in Azure AI Search](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview?tabs=docs)
+- [How to build a RAG solution using Azure AI Search](https://learn.microsoft.com/en-us/azure/search/tutorial-rag-build-solution)
 - [Azure AI Search + OpenAI RAG](https://learn.microsoft.com/en-us/azure/search/semantic-search-overview)
 - [LangChain RAG Cookbook](https://python.langchain.com/docs/use_cases/question_answering/)
 - [Pinecone Docs](https://docs.pinecone.io/)

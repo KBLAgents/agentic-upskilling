@@ -129,47 +129,6 @@ A GPT-4-based assistant that uses a calculator tool and a search tool to plan a 
 
 ---
 
-### 🧪 Hands-On Lab: Deploy a Stateless GenAI API
-
-**Goal:**  
-Build and deploy a RESTful GenAI service using FastAPI and host it on Azure App Service.
-
-**Step-by-Step:**
-
-1. **Install FastAPI and Uvicorn**  
-```bash
-pip install fastapi uvicorn openai
-```
-
-2. **Create a main app**  
-```python
-from fastapi import FastAPI, Request
-import openai
-
-app = FastAPI()
-openai.api_key = "your-api-key"
-
-@app.post("/generate")
-async def generate(request: Request):
-    body = await request.json()
-    prompt = body.get("prompt")
-    response = openai.ChatCompletion.create(
-        model="gpt-4",
-        messages=[{"role": "user", "content": prompt}]
-    )
-    return {"response": response['choices'][0]['message']['content']}
-```
-
-3. **Run locally**  
-```bash
-uvicorn main:app --reload
-```
-
-4. **Deploy to Azure App Service (optional)**  
-Use [Azure CLI](https://learn.microsoft.com/en-us/azure/app-service/quickstart-python?tabs=cli&pivots=python-framework-fastapi)
-
----
-
 ### 📘 Suggested Resources
 
 - [Azure Functions](https://learn.microsoft.com/en-us/azure/azure-functions/)

@@ -56,62 +56,10 @@ A task-oriented assistant that gets news from the web, extracts summaries, and e
 
 > 🛠️ This is done using Semantic Kernel’s Planner + Skills.
 
----
-
-### 🔍 Example: LangChain Tool-Using Agent
-
-```python
-from langchain.agents import initialize_agent, Tool
-from langchain.agents.agent_types import AgentType
-from langchain.llms import OpenAI
-
-tools = [
-    Tool(name="Calculator", func=lambda x: eval(x), description="Performs math"),
-]
-
-agent = initialize_agent(
-    tools, OpenAI(temperature=0),
-    agent=AgentType.ZERO_SHOT_REACT_DESCRIPTION,
-    verbose=True
-)
-
-agent.run("What's 4.5 times 11, then add 32?")
-```
-
----
-
-### 🧪 Hands-On Lab: Build a Planner Agent with Semantic Kernel
+### 🧪 Hands-On Lab: Build an AI Agent with Semantic Kernel
 
 **Goal:**  
-Build a multi-skill AI assistant that uses a planner to decide between searching, summarizing, or generating emails.
-
-**Step-by-Step:**
-
-1. **Install Semantic Kernel SDK (Python):**
-```bash
-pip install semantic-kernel
-```
-
-2. **Define your skills**:
-```python
-# skills/search.py
-def search_news(topic: str) -> str:
-    return f"Fake search results for {topic}"
-
-# skills/summarize.py
-def summarize(text: str) -> str:
-    return f"3-bullet summary of: {text}"
-```
-
-3. **Use Planner to orchestrate tasks**
-```python
-from semantic_kernel.planning.basic_planner import BasicPlanner
-planner = BasicPlanner(kernel)
-plan = planner.create_plan("Give me a short summary of recent AI news")
-
-result = await kernel.run_async(plan)
-print(result)
-```
+[Build your first AI agent with Semantic Kernel in either Python, .NET](https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide?pivots=programming-language-python).
 
 ---
 

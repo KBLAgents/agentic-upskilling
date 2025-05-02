@@ -13,7 +13,7 @@ By the end of this module, learners will be able to:
 
 #### 5.1 What is the Model Context Protocol (MCP)?
 
-**MCP** is a design pattern that standardizes how prompts and responses are structured, parsed, and executed across different models and providers.
+[**MCP**](https://www.anthropic.com/news/model-context-protocol) is a design pattern that standardizes how prompts and responses are structured, parsed, and executed across different models and providers.
 
 > Think of MCP as a **schema** for LLM interactions—like using GraphQL or gRPC instead of raw HTTP.
 
@@ -93,55 +93,10 @@ def build_prompt(model, request_obj):
 
 ---
 
-### 🧪 Hands-On Lab: Multi-Provider Query Router with MCP
+### 🧪 Hands-On Lab: MCP Server
 
 **Goal:**  
-Create a Python app that sends the same structured request to either OpenAI or Claude using an MCP-style abstraction.
-
-**Step-by-Step:**
-
-1. **Define Request Schema**
-```python
-def get_weather_request(city):
-    return {
-        "function": {
-            "name": "GetWeather",
-            "description": "Fetch weather info",
-            "parameters": {
-                "city": city
-            }
-        }
-    }
-```
-
-2. **Write Adapters**
-```python
-def to_openai(prompt_obj):
-    return {
-        "model": "gpt-4",
-        "functions": [{"name": prompt_obj['function']['name'], ...}],
-        "messages": [{"role": "user", "content": "What’s the weather in X?"}]
-    }
-
-def to_claude(prompt_obj):
-    return {
-        "prompt": f"Call tool GetWeather with city = {prompt_obj['function']['parameters']['city']}"
-    }
-```
-
-3. **Test Both Providers**
-```python
-provider = "openai"  # or "claude"
-prompt = get_weather_request("Nairobi")
-
-if provider == "openai":
-    payload = to_openai(prompt)
-    response = call_openai(payload)
-elif provider == "claude":
-    payload = to_claude(prompt)
-    response = call_claude(payload)
-```
-
+[Create a simple MCP weather server and connect it to a host.](https://modelcontextprotocol.io/quickstart/server)
 ---
 
 ### 💡 Use Cases for MCP
