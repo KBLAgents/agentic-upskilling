@@ -51,70 +51,13 @@ Generative AI can create a wide range of content types:
 
 ---
 
-### 💡 Example: Text + Image Generation with OpenAI
-
-```python
-import openai
-
-openai.api_key = "your-api-key"
-
-# Text generation
-response = openai.ChatCompletion.create(
-    model="gpt-4",
-    messages=[{"role": "user", "content": "Summarize the news in 3 bullets"}]
-)
-print(response['choices'][0]['message']['content'])
-
-# Image generation
-image_response = openai.Image.create(
-    prompt="A futuristic city at sunset",
-    n=1,
-    size="512x512"
-)
-print(image_response['data'][0]['url'])
-```
-
----
-
 ### 🧪 Hands-On Lab: Build Your First GenAI App
 
 **Objective:**  
-Build a basic GenAI-powered summarization web app using OpenAI’s GPT-4 and Flask.
+Build a basic GenAI-powered chat with [Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/overview).
 
 **Instructions:**
-1. Get your API key from [OpenAI](https://platform.openai.com/account/api-keys)
-2. Install Flask and OpenAI SDK:
-   ```bash
-   pip install flask openai
-   ```
-3. Create a simple app:
-
-```python
-from flask import Flask, request, jsonify
-import openai
-
-app = Flask(__name__)
-openai.api_key = "your-api-key"
-
-@app.route("/summarize", methods=["POST"])
-def summarize():
-    data = request.json
-    user_text = data.get("text")
-    response = openai.ChatCompletion.create(
-        model="gpt-4",
-        messages=[{"role": "user", "content": f"Summarize this: {user_text}"}]
-    )
-    return jsonify({"summary": response['choices'][0]['message']['content']})
-
-app.run(port=5000)
-```
-
-4. Test using Postman or `curl`:
-```bash
-curl -X POST http://localhost:5000/summarize \
-  -H "Content-Type: application/json" \
-  -d '{"text": "ChatGPT is an AI developed by OpenAI..."}'
-```
+1. [Follow this guide to create a simple chat application using chat completions with Azure OpenAI Service Python SDK.](https://learn.microsoft.com/en-us/azure/ai-services/openai/chatgpt-quickstart?source=recommendations&tabs=keyless%2Ctypescript-keyless%2Cpython-new%2Ccommand-line&pivots=programming-language-python)
 
 ---
 

@@ -24,7 +24,9 @@ By the end of this chapter, learners will be able to:
 ---
 
 ### 🔍 Pattern 1: Stateless GenAI API
+<img src="./assets/stateless-gen-ai-api.jpeg" alt="Stateless GenAI API Architecture" width="500">
 
+---
 **Use Case:**  
 - Simple chatbots  
 - One-shot content generation (e.g., summaries, captions)  
@@ -46,6 +48,9 @@ def summarize():
 
 ### 🔍 Pattern 2: Serverless GenAI Functions
 
+<img src="./assets/serverless-gen-ai-api.jpeg" alt="Serverless GenAI Functions" width="300px">
+
+---
 **Use Case:**  
 - Trigger-based summarizers (e.g., summarize Slack messages)  
 - Event ingestion and transformation (e.g., form field completion)
@@ -63,12 +68,12 @@ Deploy an Azure Function that summarizes an uploaded document when added to Blob
 
 ### 🔍 Pattern 3: Microservices with Orchestration
 
+<img src="./assets/microservices-with-orchestrator.jpeg" alt="Microservices with Orchestrator" width="300px">
+
+---
 **Use Case:**  
 - Complex GenAI systems with reusable modules  
 - Teams owning different LLM-driven services (retrieval, classification, generation)
-
-**Example Architecture:**
-- `api-gateway` → `generation-service` → `tool-use-service` → `user-profile-service`
 
 **Trade-offs:**  
 ✅ Clear service boundaries  
@@ -79,6 +84,8 @@ Deploy an Azure Function that summarizes an uploaded document when added to Blob
 ---
 
 ### 🔍 Pattern 4: Retrieval-Augmented Generation (RAG)
+
+<img src="./assets/rag.jpeg" alt="Retrieval-Augmented Generation (RAG)" width="300px">
 
 **Use Case:**  
 - Knowledge-based Q&A bots  
@@ -105,6 +112,8 @@ Deploy an Azure Function that summarizes an uploaded document when added to Blob
 - Research assistants  
 - Travel planners, task solvers  
 - Systems requiring reasoning and tool use (e.g., calculator, web search)
+
+<img src="./assets/agent.jpeg" alt="Agent-based Architectures" width="300px">
 
 **Patterns:** ReAct, AutoGPT, LangGraph, Semantic Kernel Planner
 
