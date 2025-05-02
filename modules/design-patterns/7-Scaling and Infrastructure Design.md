@@ -1,4 +1,4 @@
-# 🧩 **Chapter 6: Scaling and Infrastructure Design**
+# 🧩 **Chapter 7: Scaling and Infrastructure Design**
 
 ### 🎯 Learning Objectives:
 By the end of this module, learners will be able to:
@@ -11,19 +11,19 @@ By the end of this module, learners will be able to:
 
 ### 📌 Topics Covered
 
-#### 6.1 Scaling Challenges in GenAI Systems
+#### 7.1 Scaling Challenges in GenAI Systems
 
 | Challenge                         | Description |
 |----------------------------------|-------------|
 | **Token-based Pricing**          | Cost increases linearly with token volume |
 | **Cold Starts in Serverless**    | Latency spikes on first request or during scale-up |
-| **Context Limit Bottlenecks**    | LLMs have token limits (e.g., 8k, 16k, 128k) |
+| **Context Limit Bottlenecks**    | LLMs have token limits (e.g., 8k, 17k, 128k) |
 | **High-Latency Tool Chains**     | Multiple chained calls (RAG, planner, memory) increase round-trip time |
 | **Non-deterministic Responses**  | Results vary per invocation, complicating caching |
 
 ---
 
-#### 6.2 Infrastructure Models
+#### 7.2 Infrastructure Models
 
 | Model                  | When to Use | Tools |
 |------------------------|-------------|-------|

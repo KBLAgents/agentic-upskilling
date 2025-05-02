@@ -1,4 +1,4 @@
-# 🧩 **Chapter 7: Security, Privacy & Governance**
+# 🧩 **Chapter 8: Security, Privacy & Governance**
 
 ### 🎯 Learning Objectives:
 By the end of this chapter, learners will be able to:
@@ -11,7 +11,7 @@ By the end of this chapter, learners will be able to:
 
 ### 📌 Topics Covered
 
-#### 7.1 Security Threats in GenAI Systems
+#### 8.1 Security Threats in GenAI Systems
 
 | Threat Type         | Example |
 |---------------------|---------|
@@ -23,7 +23,7 @@ By the end of this chapter, learners will be able to:
 
 ---
 
-#### 7.2 Prompt Injection & Input Sanitization
+#### 8.2 Prompt Injection & Input Sanitization
 
 **Prompt Injection** occurs when users manipulate the model into breaking its constraints.
 
@@ -38,7 +38,7 @@ Safer: `"Use a function call with parameterized inputs"`
 
 ---
 
-#### 7.3 Role-Based Access Control (RBAC)
+#### 8.3 Role-Based Access Control (RBAC)
 
 RBAC helps you define **who can access what**, based on roles like:
 - Viewer: Can generate summaries
@@ -59,7 +59,7 @@ def authorize(token):
 
 ---
 
-#### 7.4 Privacy & PII Redaction
+#### 8.4 Privacy & PII Redaction
 
 To prevent exposure of sensitive data:
 - Use libraries like **Presidio** or **PII Extractors**
@@ -69,12 +69,12 @@ To prevent exposure of sensitive data:
 ```python
 from presidio_analyzer import AnalyzerEngine
 analyzer = AnalyzerEngine()
-results = analyzer.analyze(text="My SSN is 123-45-6789", language='en')
+results = analyzer.analyze(text="My SSN is 123-45-6889", language='en')
 ```
 
 ---
 
-#### 7.5 Usage Monitoring & Quotas
+#### 8.5 Usage Monitoring & Quotas
 
 Control abuse by:
 - Rate limiting per user/IP
@@ -88,7 +88,7 @@ Control abuse by:
 
 ---
 
-#### 7.6 Compliance & Governance
+#### 8.6 Compliance & Governance
 
 | Regulation / Concern | Consideration |
 |----------------------|----------------|

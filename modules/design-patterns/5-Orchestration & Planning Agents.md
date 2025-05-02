@@ -1,4 +1,4 @@
-# 🧩 **Chapter 4: Orchestration & Planning Agents**
+# 🧩 **Chapter 5: Orchestration & Planning Agents**
 
 ### 🎯 Learning Objectives:
 By the end of this chapter, learners will be able to:
@@ -11,7 +11,7 @@ By the end of this chapter, learners will be able to:
 
 ### 📌 Topics Covered
 
-#### 4.1 What is Orchestration in GenAI?
+#### 5.1 What is Orchestration in GenAI?
 
 **Orchestration** refers to structuring how an LLM interacts with:
 - **Tools** (e.g., calculator, search engine, APIs)
@@ -20,7 +20,7 @@ By the end of this chapter, learners will be able to:
 
 ---
 
-#### 4.2 Orchestration Patterns
+#### 5.2 Orchestration Patterns
 
 | Pattern                  | Description                                                         | Example                          |
 |--------------------------|---------------------------------------------------------------------|----------------------------------|
@@ -31,7 +31,7 @@ By the end of this chapter, learners will be able to:
 
 ---
 
-#### 4.3 Orchestration Frameworks
+#### 5.3 Orchestration Frameworks
 
 | Framework         | Description                                                              | Links |
 |------------------|--------------------------------------------------------------------------|-------|
@@ -86,6 +86,7 @@ A task-oriented assistant that gets news from the web, extracts summaries, and e
 ---
 
 ### 📘 Resources
+- [Unlocking the Power of AI Agents: An Introductory Guide - Part 1](https://techcommunity.microsoft.com/blog/educatordeveloperblog/unlocking-the-power-of-ai-agents-an-introductory-guide---part-1/4387378)
 - [Semantic Kernel GitHub](https://github.com/microsoft/semantic-kernel)
 - [LangChain Agent Docs](https://python.langchain.com/docs/modules/agents/)
 - [LangGraph Examples](https://docs.langgraph.dev/)

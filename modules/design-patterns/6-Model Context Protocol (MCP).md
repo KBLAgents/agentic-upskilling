@@ -1,4 +1,4 @@
-# 🧩 **Module 5: Model Context Protocol (MCP)**
+# 🧩 **Module 6: Model Context Protocol (MCP)**
 
 ### 🎯 Learning Objectives:
 By the end of this module, learners will be able to:
@@ -11,7 +11,7 @@ By the end of this module, learners will be able to:
 
 ### 📌 Topics Covered
 
-#### 5.1 What is the Model Context Protocol (MCP)?
+#### 6.1 What is the Model Context Protocol (MCP)?
 
 [**MCP**](https://www.anthropic.com/news/model-context-protocol) is a design pattern that standardizes how prompts and responses are structured, parsed, and executed across different models and providers.
 

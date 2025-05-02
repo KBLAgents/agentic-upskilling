@@ -1,4 +1,4 @@
-# 🧩 **Chapter 8: Evaluation & Monitoring**
+# 🧩 **Chapter 9: Evaluation & Monitoring**
 
 ### 🎯 Learning Objectives:
 By the end of this module, learners will be able to:
@@ -11,7 +11,7 @@ By the end of this module, learners will be able to:
 
 ### 📌 Topics Covered
 
-#### 8.1 Why Evaluate GenAI Outputs?
+#### 9.1 Why Evaluate GenAI Outputs?
 
 LLMs are **non-deterministic** — the same prompt can produce different results. So we must evaluate for:
 - **Correctness**: factual accuracy
@@ -22,7 +22,7 @@ LLMs are **non-deterministic** — the same prompt can produce different results
 
 ---
 
-#### 8.2 Evaluation Dimensions
+#### 9.2 Evaluation Dimensions
 
 | Dimension         | Example Metric             | Tools                         |
 |------------------|----------------------------|-------------------------------|
@@ -34,7 +34,7 @@ LLMs are **non-deterministic** — the same prompt can produce different results
 
 ---
 
-#### 8.3 Evaluation Techniques
+#### 9.3 Evaluation Techniques
 
 - **Static Evaluation**: Predefined inputs → expected outputs (e.g., summarization, classification)
 - **Dynamic Evaluation**: Real user input logged and reviewed periodically
@@ -43,7 +43,7 @@ LLMs are **non-deterministic** — the same prompt can produce different results
 
 ---
 
-#### 8.4 Tools for Evaluation
+#### 9.4 Tools for Evaluation
 
 | Tool              | Description                                      |
 |------------------|--------------------------------------------------|
@@ -104,7 +104,7 @@ promptflow run --entry eval_pipeline.yaml --input data.csv --output results.json
 
 ---
 
-#### 8.5 Logging and Monitoring
+#### 9.5 Logging and Monitoring
 
 **Metrics to track:**
 - Input/output size (tokens)
