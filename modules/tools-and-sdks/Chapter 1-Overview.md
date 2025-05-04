@@ -6,7 +6,7 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 
 ## OpenAI Ecosystem
 
-### 1. OpenAI API
+### OpenAI API
 
 - **Purpose**: Access OpenAI’s core models for text, image, and audio generation  
 - **Key Features**:
@@ -20,7 +20,7 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 
 ---
 
-### 2. ChatGPT
+#### 1. ChatGPT
 
 - **Purpose**: Conversational AI with memory and plugins
 - **Key Features**:
@@ -33,7 +33,7 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 
 ---
 
-### 3. Embeddings API
+#### 2. Embeddings API
 
 - **Purpose**: Create vector embeddings for semantic search and RAG  
 - **Key Features**:
@@ -45,7 +45,7 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 
 ---
 
-### 4. Whisper
+#### 3. Whisper
 
 - **Purpose**: Transcribe audio/video to text  
 - **Key Features**:
@@ -58,7 +58,7 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 
 ---
 
-### 5. DALL·E
+#### 4. DALL·E
 
 - **Purpose**: Generate and edit images from natural language prompts  
 - **Key Features**:
@@ -71,15 +71,17 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 
 ---
 
-### 6. Agents
+### Agents
 
-- **Purpose**: Create vector embeddings for semantic search and RAG  
+- **Purpose**: Enable multi-step reasoning and decision-making by delegating tasks to tools or calling functions dynamically
 - **Key Features**:
-  - Models: `text-embedding-3-small`, `text-embedding-3-large`
-  - Token-efficient and high-quality
-- **Use Cases**: Semantic search, document clustering, retrieval-augmented generation
-- **SDKs**: `openai-agents` in Python SDK
-- **Access / Languages**: Python, JavaScript, REST
+  - Tool use and function-calling via natural language
+  - Memory and context management
+  - Modular agent architecture using tools, functions, and retrieval systems
+  - Custom workflows via OpenAI Assistants API (beta)
+- **Use Cases**: Task automation, dynamic workflows, research assistants, coding copilots, customer service agents
+- **SDKs**: `openai.beta.assistants` via Python SDK
+- **Access / Languages**: Python, REST API, supported via LangChain and other orchestration frameworks
 
 ---
 
@@ -156,8 +158,42 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
   - GitHub Copilot for code generation
   - CRM copilots in Dynamics
 - **Use Cases**: Writing, analysis, coding, summarization, CRM workflows
-- **SDKs**: N/A (integrated into Microsoft SaaS products)
+- **DKs**: N/A (integrated into Microsoft SaaS products)
 - **Access / Languages**: No direct SDK access; SaaS integration only
+
+### 7. Github Copilot
+
+- **Purpose**: AI-powered code completion and suggestions
+- **Key Features**:
+  - Context-aware code suggestions
+  - Support for multiple programming languages
+  - Integration with popular IDEs (VS Code, JetBrains, etc.)
+  - Agent mode for multi-step reasoning
+- **Use Cases**: Code generation, debugging, learning new languages
+- **SDKs**: N/A (integrated into VSCode)
+- **Access / Languages**: No direct SDK access; IDE integration only
+
+---
+
+## Model Context Protocol (MCP)
+
+- **Purpose**: A protocol designed to standardize communication between AI models and their execution environments, enabling consistent context management, memory, and tool use
+- **Key Features**:
+  - Defines how context (messages, tools, memory, functions) is structured and passed to models
+  - Aims to enable interoperability across AI platforms, tools, and agents
+  - Focused on separating orchestration from model inference
+  - Backed by OpenAI and other ecosystem partners
+- **Use Cases**:
+  - Building interoperable agent frameworks
+  - Integrating custom tools, memory stores, and APIs with LLMs
+  - Supporting multi-model environments
+- **SDKs / Tools**:
+  - Reference implementations under development (e.g., mcp-agent from OpenAI Labs)
+  - JSON-based protocol: open standard meant to be adopted across frameworks (LangChain, Semantic Kernel, etc.)
+  - Early alignment seen in OpenAI Assistants API, LangChain, and other orchestration layers
+- **Access / Languages**:
+  - No official SDK yet, but open standard is in discussion on GitHub
+  - Intended to be language-agnostic and backend-neutral
 
 ---
 
