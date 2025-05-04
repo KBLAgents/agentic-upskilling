@@ -172,6 +172,8 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 - **Use Cases**: Code generation, debugging, learning new languages
 - **SDKs**: N/A (integrated into VSCode)
 - **Access / Languages**: No direct SDK access; IDE integration only
+- **Resources**:
+  - [VS Code Agent Mode](https://www.youtube.com/watch?v=dutyOc_cAEU)
 
 ---
 
