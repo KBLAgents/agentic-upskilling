@@ -2,16 +2,22 @@
 
 High-level overview of the AI tools and SDKs available. This chapter will help you understand the landscape of AI tools, when to use or not use each one as well as how they can be used together.
 
+>Disclaimer: This is not an exhaustive list of tools and SDKs available in the AI landscape.
+
 ---
+
 ## Table of Contents
+
 - [Foundation Models](#foundation-models)
   - [OpenAI API](#openai-api)
   - [ChatGPT series](#chatgpt-series)
   - [Whisper](#whisper)
-  - [DALL·E](#dall-e)
+  - [DALL·E](#dall·e)
   - [Embeddings API](#embeddings-api)
   - [Claude 3.7 Sonnet (Anthropic)](#claude-37-sonnet-anthropic)
 - [Retrieval-Augmented Generation (RAG)](#retrieval-augmented-generation-rag)
+  - [Azure AI Search](#azure-ai-search)
+  - [LlamaIndex](#llamaindex)
 - [LLM Orchestration & Agent/Workflow Automation](#llm-orchestration--agentworkflow-automation)
   - [LangChain](#langchain)
   - [Microsoft AutoGen](#microsoft-autogen)
@@ -27,8 +33,8 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
   - [OpenAI `evals`](#openai-evals)
   - [Azure AI Evaluation SDK](#azure-ai-evaluation-sdk)
   - [Weights & Biases (W&B)](#weights--biases-wb)
-- [Code generation](#code-generation)
-  - [Github Copilot](#github-copilot)
+- [Code Generation](#code-generation)
+  - [GitHub Copilot](#github-copilot)
   - [Microsoft Copilot Stack](#microsoft-copilot-stack)
   - [Amazon CodeWhisperer](#amazon-codewhisperer)
 
