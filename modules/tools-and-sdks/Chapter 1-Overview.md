@@ -3,7 +3,40 @@
 High-level overview of the AI tools and SDKs available. This chapter will help you understand the landscape of AI tools, when to use or not use each one as well as how they can be used together.
 
 ---
-## OpenAI API
+## Table of Contents
+- [Foundation Models](#foundation-models)
+  - [OpenAI API](#openai-api)
+  - [ChatGPT series](#chatgpt-series)
+  - [Whisper](#whisper)
+  - [DALL·E](#dall-e)
+  - [Embeddings API](#embeddings-api)
+  - [Claude 3.7 Sonnet (Anthropic)](#claude-37-sonnet-anthropic)
+- [Retrieval-Augmented Generation (RAG)](#retrieval-augmented-generation-rag)
+- [LLM Orchestration & Agent/Workflow Automation](#llm-orchestration--agentworkflow-automation)
+  - [LangChain](#langchain)
+  - [Microsoft AutoGen](#microsoft-autogen)
+  - [Semantic Kernel (Microsoft)](#semantic-kernel-microsoft)
+  - [Model Context Protocol (MCP)](#model-context-protocol-mcp)
+  - [OpenAI Assistants / Agents](#openai-assistants--agents)
+- [Cloud GenAI Platforms](#cloud-genai-platforms)
+  - [Azure OpenAI Service](#azure-openai-service)
+  - [Azure AI Foundry](#azure-ai-foundry)
+  - [Azure AI Services](#azure-ai-services)
+- [Evaluation](#evaluation)
+  - [LangChain `agent-eval`](#langchain-agent-eval)
+  - [OpenAI `evals`](#openai-evals)
+  - [Azure AI Evaluation SDK](#azure-ai-evaluation-sdk)
+  - [Weights & Biases (W&B)](#weights--biases-wb)
+- [Code generation](#code-generation)
+  - [Github Copilot](#github-copilot)
+  - [Microsoft Copilot Stack](#microsoft-copilot-stack)
+  - [Amazon CodeWhisperer](#amazon-codewhisperer)
+
+---
+
+## Foundation Models
+
+### OpenAI API
 
 - **Purpose**: Access foundation models for text, image, and audio generation  
 - **Key Features**:
@@ -24,8 +57,6 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
 
 ---
 
-## Foundation Models
-
 ### ChatGPT series
 
 - **Purpose**: Conversational AI with memory and plugins
@@ -40,6 +71,7 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
   - [ChatGPT Plugins](https://platform.openai.com/docs/plugins/introduction)
 - **When to use**: Customer support, personal assistants, interactive applications
 - **When Not to Use**: If open-source or on-premise solutions are required.
+
 ---
 
 ### Whisper
@@ -151,9 +183,12 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
 - **When to Use**: For building complex LLM applications with multiple components.
 - **When Not to Use**: For simple, single-function applications.
 
-### Microsoft AutoGen 
+---
+
+### Microsoft AutoGen
+
 - **Purpose**: Multi-agent orchestration framework.
-- **Key Features**: 
+- **Key Features**:
   - Collaborative agents
   - function calling
   - simulation of social dynamics
@@ -169,7 +204,7 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
 ### Semantic Kernel (Microsoft)
 
 - **Purpose**: Build orchestrated, modular AI agents with memory, tools, and planning.
-- **Key Features**: 
+- **Key Features**:
   - Semantic + native functions
   - Memory and skills management
   - Planner and workflow orchestration
@@ -180,7 +215,7 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
   - [Semantic Kernel Agent Framework](https://learn.microsoft.com/en-us/semantic-kernel/frameworks/agent/?pivots=programming-language-python)de AI applications with complex workflows.
 - **When Not to Use**: For lightweight or prototype applications.
 
---- 
+---
 
 ### Model Context Protocol (MCP)
 
@@ -301,7 +336,7 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
   - You’re only evaluating static prompts or completion outputs
   - You're working outside the LangChain ecosystem
 
---- 
+---
 
 ### OpenAI `evals`
 
@@ -345,26 +380,20 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
 ---
 
 ### Weights & Biases (W&B)
-- **Purpose**:  
-  **Experiment tracking**, visualization, and debugging platform for machine learning and generative models.
+
+- **Purpose**: Experiment tracking, visualization, and debugging platform for machine learning and generative models.
 - **Key Features**:
   - Track training runs, hyperparameters, outputs, and comparisons
   - Integrated with Hugging Face, OpenAI, LangChain, PyTorch, and more
   - Visualize token usage, loss curves, embeddings, and generations
   - Supports collaboration and versioning for experiments
-- **SDKs / Tools**:
-  - `wandb` Python SDK
-  - Web dashboard with project and report views
+- **SDKs / Tools**: [`wandb` Python SDK](https://pypi.org/project/wandb/), Web dashboard with project and report views
 - **Resources**:
   - [Weights & Biases Website](https://wandb.ai/)
   - [W&B Docs](https://docs.wandb.ai/)
   - [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open-llm-leaderboard)
-- **When to Use**:
-  - You need **deep observability** into model development
-  - You're running **iterative experiments** with multiple configs
-- **When Not to Use**:
-  - You're building quick demos or one-off evaluations
-  - You need closed-source / enterprise-only tools
+- **When to Use**: deep observability into model development, iterative experiments with multiple configs
+- **When Not to Use**: quick demos or one-off evaluations, closed-source / enterprise-only tools
 
 ---
 
@@ -387,6 +416,8 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
   - [VS Code Agent Mode](https://www.youtube.com/watch?v=dutyOc_cAEU)
   - [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
   - [Copilot Customization](https://code.visualstudio.com/docs/copilot/copilot-customization)
+- **When to Use**: For developers looking for code suggestions and learning new languages
+- **When Not to Use**: N/A `:)`
 
 ---
 
@@ -402,6 +433,8 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
 - **Access / Languages**: No direct SDK access; SaaS integration only
 - **Resources**:
   - [Microsoft Copilot Overview](https://www.microsoft.com/en-us/microsoft-365/copilot)
+- **When to Use**: For users of Microsoft 365, GitHub, and Dynamics looking for AI enhancements
+- **When Not to Use**: If you prefer open-source or non-Microsoft tools, or if you need custom integrations outside the Microsoft ecosystem.
 
 ---
 
