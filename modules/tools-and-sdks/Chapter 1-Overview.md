@@ -17,6 +17,11 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 - **Use Cases**: Conversational AI, content generation, code assistants, summarization, search
 - **SDKs**: `openai` Python SDK, Node.js SDK, REST API
 - **Access / Languages**: Python, JavaScript/TypeScript, REST
+- **Resources**:
+  - [OpenAI API Documentation](https://platform.openai.com/docs/introduction)
+  - [OpenAI Python SDK](https://pypi.org/project/openai/)
+  - [OpenAI Node.js SDK](https://www.npmjs.com/package/openai)
+  - [OpenAI REST API](https://platform.openai.com/docs/api-reference/introduction)
 
 ---
 
@@ -30,6 +35,9 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 - **Use Cases**: Customer support, personal assistants, interactive applications
 - **SDKs**: `openai.ChatCompletion.create()` in Python SDK; also available in ChatGPT UI
 - **Access / Languages**: Python, JavaScript, ChatGPT UI
+- **Resources**:
+  - [ChatGPT Documentation](https://platform.openai.com/docs/guides/gpt/chatgpt)
+  - [ChatGPT Plugins](https://platform.openai.com/docs/plugins/introduction)
 
 ---
 
@@ -42,6 +50,8 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 - **Use Cases**: Semantic search, document clustering, retrieval-augmented generation
 - **SDKs**: `openai.Embedding.create()` in Python/Node.js SDK
 - **Access / Languages**: Python, JavaScript, REST
+- **Resources**:
+  - [Embeddings API Documentation](https://platform.openai.com/docs/guides/embeddings/introduction)
 
 ---
 
@@ -55,6 +65,10 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 - **Use Cases**: Voice interfaces, meeting transcription, video captioning
 - **SDKs**: `openai.Audio.transcribe()` in Python SDK; also open-source CLI
 - **Access / Languages**: Python, CLI, model weights
+- **Resources**:
+  - [Whisper API Documentation](https://platform.openai.com/docs/guides/speech-to-text/introduction)
+  - [Whisper GitHub Repository](https://github.com/openai/whisper)
+  - [API Reference: Transcription](https://platform.openai.com/docs/api-reference/audio)
 
 ---
 
@@ -68,6 +82,9 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 - **Use Cases**: Marketing, art generation, UI mockups, concept design
 - **SDKs**: `openai.Image.create()` via Python SDK and Node.js SDK
 - **Access / Languages**: Python, Node.js, ChatGPT UI
+- **Resources**:
+  - [DALL·E API Documentation](https://platform.openai.com/docs/api-reference/images)
+  - [DALL·E GitHub Repository](https://github.com/openai/dall-e)
 
 ---
 
@@ -82,6 +99,9 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 - **Use Cases**: Task automation, dynamic workflows, research assistants, coding copilots, customer service agents
 - **SDKs**: `openai.beta.assistants` via Python SDK
 - **Access / Languages**: Python, REST API, supported via LangChain and other orchestration frameworks
+- **Resources**:
+  - [OpenAI Function Calling](https://platform.openai.com/docs/guides/gpt/function-calling)
+  - [LangChain Agents Documentation](https://python.langchain.com/docs/modules/agents/)
 
 ---
 
@@ -97,6 +117,10 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 - **Use Cases**: Secure LLM deployment, enterprise AI applications, regulated industries
 - **SDKs**: `openai`, Azure SDKs (Python, .NET, JavaScript, Java), REST API, CLI
 - **Access / Languages**: Python, .NET, JavaScript, Java, Azure Portal
+- **Resources**:
+  - [Azure OpenAI Service Documentation](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/)
+  - [Azure OpenAI Python SDK](https://learn.microsoft.com/en-us/azure/ai-services/openai/supported-languages?tabs=dotnet-secure%2Csecure%2Cpython-secure%2Ccommand&pivots=programming-language-python)
+  - [Azure OpenAI REST API](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference)
 
 ---
 
@@ -110,6 +134,10 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 - **Use Cases**: End-to-end AI application development, enterprise AI workflows
 - **SDKs**: Azure AI Foundry SDK, integrated with Azure SDKs
 - **Access / Languages**: Python, C#, JavaScript (coming soon), Azure Portal
+- **Resources**:
+  - [Azure AI Foundry Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/)
+  - [Azure AI Foundry SDK](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/sdk-overview?tabs=sync&pivots=programming-language-python)
+  - [Azure AI Foundry REST API](https://learn.microsoft.com/en-us/rest/api/aifoundry/?view=rest-aifoundry-model-inference-2024-05-01-preview)
 
 ---
 
@@ -122,6 +150,9 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 - **Use Cases**: Accessibility, translation, CV apps, voice bots
 - **SDKs**: Azure SDKs (Python, JavaScript, Java, .NET), REST APIs
 - **Access / Languages**: Python, JavaScript, Java, C#, REST
+- **Resources**:
+  - [Azure AI Services Overview](https://learn.microsoft.com/en-us/azure/cognitive-services/)
+  - [Azure SDK for Python](https://learn.microsoft.com/en-us/python/api/overview/azure/?view=azure-python)
 
 ---
 
@@ -135,6 +166,9 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 - **Use Cases**: Task automation, AI agents, workflow builders
 - **SDKs**: [Semantic Kernel SDKs](https://learn.microsoft.com/en-us/semantic-kernel/get-started/quick-start-guide?pivots=programming-language-python) (C#, Python, Java - preview)
 - **Access / Languages**: C#, Python, Java; open source on GitHub
+- **Resources**:
+  - [Semantic Kernel Documentation](https://learn.microsoft.com/en-us/semantic-kernel/)
+  - [Semantic Kernel GitHub Repository](https://github.com/microsoft/semantic-kernel)
 
 ---
 
@@ -147,6 +181,9 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 - **Use Cases**: Multi-agent simulations, planning systems, AI research tools
 - **SDKs**: [autogenstudio](https://github.com/microsoft/autogen) Python SDK
 - **Access / Languages**: Python; open source on GitHub
+- **Resources**:
+  - [Microsoft Autogen Documentation](https://www.microsoft.com/en-us/research/project/autogen/)
+  - [Autogen GitHub Repository](https://github.com/microsoft/autogen)
 
 ---
 
@@ -160,6 +197,8 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 - **Use Cases**: Writing, analysis, coding, summarization, CRM workflows
 - **DKs**: N/A (integrated into Microsoft SaaS products)
 - **Access / Languages**: No direct SDK access; SaaS integration only
+- **Resources**:
+  - [Microsoft Copilot Overview](https://www.microsoft.com/en-us/microsoft-365/copilot)
 
 ### 7. Github Copilot
 
@@ -174,6 +213,7 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 - **Access / Languages**: No direct SDK access; IDE integration only
 - **Resources**:
   - [VS Code Agent Mode](https://www.youtube.com/watch?v=dutyOc_cAEU)
+  - [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
 
 ---
 
@@ -196,6 +236,9 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 - **Access / Languages**:
   - No official SDK yet, but open standard is in discussion on GitHub
   - Intended to be language-agnostic and backend-neutral
+- **Resources**:
+  - [Model Context Protocol Overview](https://github.com/modelcontextprotocol)
+  - [Anthropic - Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)
 
 ---
 
