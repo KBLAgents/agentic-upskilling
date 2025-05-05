@@ -131,6 +131,7 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
   - Model catalog with OpenAI and third-party models
   - Prompt engineering, evaluation, deployment, monitoring
   - Integration with Azure services
+  - Playground for evaluating models
 - **Use Cases**: End-to-end AI application development, enterprise AI workflows
 - **SDKs**: Azure AI Foundry SDK, integrated with Azure SDKs
 - **Access / Languages**: Python, C#, JavaScript (coming soon), Azure Portal
@@ -169,6 +170,7 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 - **Resources**:
   - [Semantic Kernel Documentation](https://learn.microsoft.com/en-us/semantic-kernel/)
   - [Semantic Kernel GitHub Repository](https://github.com/microsoft/semantic-kernel)
+  - [Semantic Kernel Agent Framework](https://learn.microsoft.com/en-us/semantic-kernel/frameworks/agent/?pivots=programming-language-python)
 
 ---
 
@@ -207,7 +209,8 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
   - Context-aware code suggestions
   - Support for multiple programming languages
   - Integration with popular IDEs (VS Code, JetBrains, etc.)
-  - Agent mode for multi-step reasoning
+  - Agent mode for vibe coding
+  - MCP (Model Context Protocol) support
 - **Use Cases**: Code generation, debugging, learning new languages
 - **SDKs**: N/A (integrated into VSCode)
 - **Access / Languages**: No direct SDK access; IDE integration only
