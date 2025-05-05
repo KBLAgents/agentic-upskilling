@@ -75,7 +75,7 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
 - **Resources**:
   - [ChatGPT Documentation](https://platform.openai.com/docs/guides/gpt/chatgpt)
   - [ChatGPT Plugins](https://platform.openai.com/docs/plugins/introduction)
-- **When to use**: Customer support, personal assistants, interactive applications
+- **When to Use**: Customer support, personal assistants, interactive applications
 - **When Not to Use**: If open-source or on-premise solutions are required.
 
 ---
@@ -110,7 +110,7 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
 - **Resources**:
   - [DALL·E API Documentation](https://platform.openai.com/docs/api-reference/images)
   - [DALL·E GitHub Repository](https://github.com/openai/dall-e)
-- **When to use**: Marketing, art generation, UI mockups, concept design
+- **When to Use**: Marketing, art generation, UI mockups, concept design
 - **When Not to Use**: High-resolution, photorealistic tasks (Midjourney/SD may outperform).
 
 ---
@@ -125,7 +125,7 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
 - **Access / Languages**: Python, JavaScript, REST
 - **Resources**:
   - [Embeddings API Documentation](https://platform.openai.com/docs/guides/embeddings/introduction)
-- **When to use**: Semantic search, document clustering, retrieval-augmented generation
+- **When to Use**: Semantic search, document clustering, retrieval-augmented generation
 
 ---
 
@@ -160,7 +160,7 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
   - Azure SDKs for Python, .NET, JavaScript, Java, REST API, Azure AI Studio integration 
 - **Resources**:
   - [Azure AI Search Docs](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search)
-- **When to Use**: enterprise RAG with Azure-hosted data, needing tight integration with Azure OpenAI, RBAC, security, hybrid or semantic search 
+- **When to Use**: enterprise RAG with Azure-hosted data, needing tight integration with Azure OpenAI, RBAC, security, hybrid or semantic search
 - **When Not to Use**: For lightweight/local projects where Elastic or open-source tools are simpler
 
 ---
@@ -219,6 +219,7 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
   - [Semantic Kernel Documentation](https://learn.microsoft.com/en-us/semantic-kernel/)
   - [Semantic Kernel GitHub Repository](https://github.com/microsoft/semantic-kernel)
   - [Semantic Kernel Agent Framework](https://learn.microsoft.com/en-us/semantic-kernel/frameworks/agent/?pivots=programming-language-python)de AI applications with complex workflows.
+- **When to Use**: For building orchestrated Agents and AI applications with modular components, memory, and planning.
 - **When Not to Use**: For lightweight or prototype applications.
 
 ---
@@ -231,10 +232,6 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
   - Aims to enable interoperability across AI platforms, tools, and agents
   - Focused on separating orchestration from model inference
   - Backed by OpenAI and other ecosystem partners
-- **Use Cases**:
-  - Building interoperable agent frameworks
-  - Integrating custom tools, memory stores, and APIs with LLMs
-  - Supporting multi-model environments
 - **SDKs / Tools**:
   - Reference implementations under development (e.g., mcp-agent from OpenAI Labs)
   - JSON-based protocol: open standard meant to be adopted across frameworks (LangChain, Semantic Kernel, etc.)
@@ -245,6 +242,11 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
 - **Resources**:
   - [Model Context Protocol Overview](https://github.com/modelcontextprotocol)
   - [Anthropic - Introducing the Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)
+- **When to Use**:
+  - Building interoperable agent frameworks
+  - Integrating custom tools, memory stores, and APIs with LLMs
+  - Supporting multi-model environments
+- **When Not to Use**: If you are using a single model or framework without the need for interoperability
 
 ---
 
@@ -256,12 +258,13 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
   - Memory and context management
   - Modular agent architecture using tools, functions, and retrieval systems
   - Custom workflows via OpenAI Assistants API (beta)
-- **Use Cases**: Task automation, dynamic workflows, research assistants, coding copilots, customer service agents
 - **SDKs**: `openai.beta.assistants` via Python SDK
 - **Access / Languages**: Python, REST API, supported via LangChain and other orchestration frameworks
 - **Resources**:
   - [OpenAI Function Calling](https://platform.openai.com/docs/guides/gpt/function-calling)
   - [LangChain Agents Documentation](https://python.langchain.com/docs/modules/agents/)
+- **When to Use**: Task automation, dynamic workflows, research assistants, coding copilots, customer service agents
+- **When Not to Use**: For simple, single-step tasks
 
 ---
 
@@ -274,13 +277,14 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
   - GPT-4, GPT-3.5, Codex, DALL·E, Whisper hosted in Azure
   - RBAC, logging, enterprise security and compliance
   - Integration with Azure tools and services
-- **Use Cases**: Secure LLM deployment, enterprise AI applications, regulated industries
 - **SDKs**: `openai`, Azure SDKs (Python, .NET, JavaScript, Java), REST API, CLI
 - **Access / Languages**: Python, .NET, JavaScript, Java, Azure Portal
 - **Resources**:
   - [Azure OpenAI Service Documentation](https://learn.microsoft.com/en-us/azure/cognitive-services/openai/)
   - [Azure OpenAI Python SDK](https://learn.microsoft.com/en-us/azure/ai-services/openai/supported-languages?tabs=dotnet-secure%2Csecure%2Cpython-secure%2Ccommand&pivots=programming-language-python)
   - [Azure OpenAI REST API](https://learn.microsoft.com/en-us/azure/ai-services/openai/reference)
+- **When to Use**: Secure LLM deployment, enterprise AI applications, regulated industries
+- **When Not to Use**: If you need a lightweight or open-source solution, or if you want to use models outside Azure.
 
 ---
 
@@ -299,7 +303,7 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
   - [Azure AI Foundry Documentation](https://learn.microsoft.com/en-us/azure/ai-foundry/)
   - [Azure AI Foundry SDK](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/develop/sdk-overview?tabs=sync&pivots=programming-language-python)
   - [Azure AI Foundry REST API](https://learn.microsoft.com/en-us/rest/api/aifoundry/?view=rest-aifoundry-model-inference-2024-05-01-preview)
-- **When to use**: End-to-end AI application development, enterprise AI workflows
+- **When to Use**: End-to-end AI application development, enterprise AI workflows
 - **When Not to Use**: You use models outside Azure, You want complete control over infrastructure or lightweight experimentation
 
 ---
@@ -310,12 +314,13 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
 - **Key Features**:
   - Speech-to-text, text-to-speech, OCR, image tagging
   - Language Understanding (LUIS), translation, anomaly detection
-- **Use Cases**: Accessibility, translation, CV apps, voice bots
 - **SDKs**: Azure SDKs (Python, JavaScript, Java, .NET), REST APIs
 - **Access / Languages**: Python, JavaScript, Java, C#, REST
 - **Resources**:
   - [Azure AI Services Overview](https://learn.microsoft.com/en-us/azure/cognitive-services/)
   - [Azure SDK for Python](https://learn.microsoft.com/en-us/python/api/overview/azure/?view=azure-python)
+- **When to Use**: Accessibility, translation, CV apps, voice bots
+- **When Not to Use**: If you need custom models or deep learning frameworks, or if you want to work outside of Azure.
 
 ---
 
@@ -415,14 +420,13 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
   - Agent mode for vibe coding
   - MCP (Model Context Protocol) support
   - Copilot customization
-- **Use Cases**: Code generation, debugging, learning new languages
 - **SDKs**: N/A (integrated into VSCode)
 - **Access / Languages**: No direct SDK access; IDE integration only
 - **Resources**:
   - [VS Code Agent Mode](https://www.youtube.com/watch?v=dutyOc_cAEU)
   - [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
   - [Copilot Customization](https://code.visualstudio.com/docs/copilot/copilot-customization)
-- **When to Use**: For developers looking for code suggestions and learning new languages
+- **When to Use**: Code generation, debugging, learning new languages
 - **When Not to Use**: N/A `:)`
 
 ---
@@ -434,12 +438,11 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
   - Word, Excel, PowerPoint, Outlook, Teams copilots
   - GitHub Copilot for code generation
   - CRM copilots in Dynamics
-- **Use Cases**: Writing, analysis, coding, summarization, CRM workflows
 - **DKs**: N/A (integrated into Microsoft SaaS products)
 - **Access / Languages**: No direct SDK access; SaaS integration only
 - **Resources**:
   - [Microsoft Copilot Overview](https://www.microsoft.com/en-us/microsoft-365/copilot)
-- **When to Use**: For users of Microsoft 365, GitHub, and Dynamics looking for AI enhancements
+- **When to Use**: Writing, analysis, coding, summarization, CRM workflows. For users of Microsoft 365, GitHub, and Dynamics looking for AI enhancements
 - **When Not to Use**: If you prefer open-source or non-Microsoft tools, or if you need custom integrations outside the Microsoft ecosystem.
 
 ---
