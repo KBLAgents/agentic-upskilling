@@ -6,7 +6,7 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 
 ## OpenAI Ecosystem
 
-### OpenAI API
+### 1. OpenAI API
 
 - **Purpose**: Access OpenAI’s core models for text, image, and audio generation  
 - **Key Features**:
@@ -25,7 +25,7 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 
 ---
 
-#### 1. ChatGPT
+### 2. ChatGPT
 
 - **Purpose**: Conversational AI with memory and plugins
 - **Key Features**:
@@ -41,7 +41,7 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 
 ---
 
-#### 2. Embeddings API
+### 3. Embeddings API
 
 - **Purpose**: Create vector embeddings for semantic search and RAG  
 - **Key Features**:
@@ -55,7 +55,7 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 
 ---
 
-#### 3. Whisper
+### 4. Whisper
 
 - **Purpose**: Transcribe audio/video to text  
 - **Key Features**:
@@ -72,7 +72,7 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 
 ---
 
-#### 4. DALL·E
+### 5. DALL·E
 
 - **Purpose**: Generate and edit images from natural language prompts  
 - **Key Features**:
@@ -88,7 +88,7 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
 
 ---
 
-### Agents
+### 6. Agents
 
 - **Purpose**: Enable multi-step reasoning and decision-making by delegating tasks to tools or calling functions dynamically
 - **Key Features**:
