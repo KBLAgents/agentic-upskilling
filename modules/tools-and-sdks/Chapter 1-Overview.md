@@ -211,12 +211,14 @@ High-level overview of the AI tools and SDKs available, with a focus on **OpenAI
   - Integration with popular IDEs (VS Code, JetBrains, etc.)
   - Agent mode for vibe coding
   - MCP (Model Context Protocol) support
+  - Copilot customization
 - **Use Cases**: Code generation, debugging, learning new languages
 - **SDKs**: N/A (integrated into VSCode)
 - **Access / Languages**: No direct SDK access; IDE integration only
 - **Resources**:
   - [VS Code Agent Mode](https://www.youtube.com/watch?v=dutyOc_cAEU)
   - [GitHub Copilot Documentation](https://docs.github.com/en/copilot)
+  - [Copilot Customization](https://code.visualstudio.com/docs/copilot/copilot-customization)
 
 ---
 
