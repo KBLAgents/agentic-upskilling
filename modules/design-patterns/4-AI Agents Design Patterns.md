@@ -43,7 +43,7 @@ By the end of this chapter, learners will be able to:
 * Agent Orchestration Strategies([Introduction | 🦜️🔗 LangChain][2], [DEV Community][3], [Data Science Dojo][4])
 
 ---
-
+![](https://markovate.com/wp-content/uploads/2024/06/Understanding-AI-Agents-1.webp)
 ### 🧠 Key Design Patterns Explained
 
 #### 1. **ReAct Pattern (Reason + Act)**
