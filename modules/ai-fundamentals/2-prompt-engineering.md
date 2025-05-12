@@ -1,4 +1,4 @@
-# Chapter 1: Foundations of Prompt Engineering
+# Chapter 2: Foundations of Prompt Engineering
 
 Introduction to the concept of prompt engineering, its importance in interacting with AI models, and foundational strategies for effective prompt design.
 
@@ -7,6 +7,7 @@ Introduction to the concept of prompt engineering, its importance in interacting
 ## **Prompt Basics**
 
 ### **1. What is Prompt Engineering?**
+
 - **Definition**: The art and science of crafting inputs (prompts) to guide AI behavior and generate tailored outputs.  
 - **Importance**:  
   - Unlocks the true potential of large language models (LLMs).  
@@ -16,6 +17,7 @@ Introduction to the concept of prompt engineering, its importance in interacting
 ---
 
 ### **2. Components of a Prompt**
+
 - **Structure**:  
   - **Context or Instruction**: Setting the stage for the AI's response.  
     Example: *"You are an expert chef specializing in Italian cuisine."*  
@@ -38,6 +40,7 @@ Introduction to the concept of prompt engineering, its importance in interacting
 ---
 
 ### **3. Types of Prompts**
+
 - **Zero-shot Prompts**: Provide simple instructions without examples.  
   - Example:  
     *"Summarize the following text in one paragraph."*  
@@ -50,8 +53,8 @@ Introduction to the concept of prompt engineering, its importance in interacting
   - Example:  
     *"Generate a title for a blog post based on the following examples:*  
     **Examples**:  
-      - Blog about AI ethics → Title: 'Navigating the Ethics of Artificial Intelligence'  
-      - Blog about renewable energy → Title: 'Harnessing Energy for a Sustainable Future'  
+    - Blog about AI ethics → Title: 'Navigating the Ethics of Artificial Intelligence'  
+    - Blog about renewable energy → Title: 'Harnessing Energy for a Sustainable Future'  
     *Your task: Blog about robotics → Title:*  
 
 - **Chain of Thought Prompts**: Encourage step-by-step reasoning.  
@@ -70,6 +73,7 @@ Introduction to the concept of prompt engineering, its importance in interacting
 ## **Advanced Strategies**
 
 ### **1. Prompt Optimization**
+
 - **Key Techniques**:  
   - **Iterative Refinement**: Adjust and test prompts repeatedly.  
     Example:  
@@ -83,6 +87,7 @@ Introduction to the concept of prompt engineering, its importance in interacting
 ---
 
 ### **2. Dynamic Prompts**
+
 - **Concept**: Automating prompt generation based on dynamic inputs.  
 - **Use Cases**:  
   - Personalized chat: *"Hello {user_name}, how can I assist you with {topic} today?"*  
@@ -91,6 +96,7 @@ Introduction to the concept of prompt engineering, its importance in interacting
 ---
 
 ### **3. Prompt Chaining**
+
 - **Definition**: Linking multiple prompts to create complex workflows.  
   - Example:  
     1. Prompt 1: *"Summarize this article in bullet points."*  
@@ -100,6 +106,7 @@ Introduction to the concept of prompt engineering, its importance in interacting
 ---
 
 ### **4. Incorporating Context**
+
 - **Definition**: Adding external or historical data to enhance understanding.  
 - **Techniques**:  
   - **Embedding-Based Retrieval**: Query a database to provide context to the model.  
@@ -114,6 +121,7 @@ Introduction to the concept of prompt engineering, its importance in interacting
 ## **Tools for Prompt Engineering**
 
 ### **1. OpenAI Playground**
+
 - **Purpose**: Test and refine prompts interactively.  
 - **Key Features**:  
   - GPT models fine-tuned for instructions.  
@@ -123,6 +131,7 @@ Introduction to the concept of prompt engineering, its importance in interacting
 ---
 
 ### **2. LangChain**
+
 - **Purpose**: Build modular AI workflows around LLMs.  
 - **Capabilities**:  
   - Multi-prompt chaining and orchestration.  
@@ -131,6 +140,7 @@ Introduction to the concept of prompt engineering, its importance in interacting
 ---
 
 ### **3. Prompt Libraries**
+
 - **Examples**:  
   - **PromptBase**: Repository of high-quality curated prompts.  
   - **GitHub**: Community-contributed prompts and templates.  
@@ -140,6 +150,7 @@ Introduction to the concept of prompt engineering, its importance in interacting
 ## **Challenges in Prompt Engineering**
 
 ### **1. Ambiguity**
+
 - **Problem**: Vague instructions leading to incorrect outputs.  
 - **Solution**: Use concrete terms and examples.  
   Example:  
@@ -149,6 +160,7 @@ Introduction to the concept of prompt engineering, its importance in interacting
 ---
 
 ### **2. Token and Cost Management**
+
 - **Problem**: Large prompts consuming excessive tokens and increasing API costs.  
 - **Solution**: Optimize prompt length and utilize embedding-based approaches.  
   Example: Reduce verbosity:  
@@ -158,6 +170,7 @@ Introduction to the concept of prompt engineering, its importance in interacting
 ---
 
 ### **3. Bias Control**
+
 - **Problem**: Prompts inadvertently reflect cultural and content biases.  
 - **Solution**: Test with diverse examples and iterate for fairness.  
 
@@ -166,6 +179,7 @@ Introduction to the concept of prompt engineering, its importance in interacting
 ## **Learning Resources**
 
 ### **1. Tutorials**
+
 - **OpenAI Documentation**:  
   [https://platform.openai.com/docs/](https://platform.openai.com/docs/)  
   Covers GPT and advanced prompt techniques.  
@@ -175,15 +189,18 @@ Introduction to the concept of prompt engineering, its importance in interacting
   Focused on building workflows and exploring prompt chains.  
 
 ### **2. Courses**
+
 - **FastAI’s Deep Learning & AI Course**:  
   [https://course.fast.ai/](https://course.fast.ai/)  
   Includes practical examples for working with models like GPT.  
 
 ### **3. Books**
+
 - **"The Art of Prompt Engineering" (Upcoming)**:  
   Look for guides published by AI practitioners on Amazon or GitHub.  
 
 ### **4. Community**
+
 - OpenAI Community Forums:  
   [https://community.openai.com/](https://community.openai.com/)  
   Share examples, problems, and solutions.  

@@ -1,4 +1,4 @@
-# Chapter: GenAI - Parameters (Temperature, top_k, top_p, etc.)
+# Chapter 4: GenAI - Parameters (Temperature, top_k, top_p, etc.)
 
 ## Introduction
 
@@ -9,10 +9,12 @@ Generative AI models use adjustable parameters to control the nature, diversity,
 ## **Overview of Generation Parameters**
 
 ### **1. What are Generation Parameters?**
+
 - **Definition**: Generation parameters define how AI models determine which words or tokens to select from their predictions during text generation.  
 - **Core Idea**: They control randomness, creativity, and likelihood of responses.  
 
 ### **2. Why Do Parameters Matter?**
+
 - **Impact**:  
   - Parameters affect text style, coherence, diversity, and accuracy.  
   - Selecting appropriate values ensures outputs match your project goals.  
@@ -25,6 +27,7 @@ Generative AI models use adjustable parameters to control the nature, diversity,
 ## **Key Parameters Explained**
 
 ### **1. Temperature**
+
 - **Definition**: Temperature adjusts the randomness of the model's output by controlling token probabilities.  
 - **Behavior**:  
   - Higher values (`1.0` or above): Increase randomness → More creative outputs.  
@@ -49,6 +52,7 @@ Generative AI models use adjustable parameters to control the nature, diversity,
 ---
 
 ### **2. Top-k Sampling**
+
 - **Definition**: Limits the model’s token selection to the top `k` most likely candidates.  
 - **Behavior**:  
   - Higher `k` values: Allow wider diversity → Unexpected but interesting outputs.  
@@ -72,7 +76,8 @@ Generative AI models use adjustable parameters to control the nature, diversity,
 
 ---
 
-### **3. Top-p Sampling (Nucleus Sampling)**  
+### **3. Top-p Sampling (Nucleus Sampling)**
+
 - **Definition**: Instead of limiting by `k`, `top-p` considers tokens with a cumulative probability `p`. Tokens are sampled until their combined likelihood reaches `p`.  
 - **Behavior**:  
   - Lower `p` values (e.g., `0.2`): Force narrower token ranges.  
@@ -97,7 +102,8 @@ Generative AI models use adjustable parameters to control the nature, diversity,
 
 ---
 
-### **4. Frequency and Presence Penalty**  
+### **4. Frequency and Presence Penalty**
+
 - **Definitions**:  
   - **Frequency Penalty**: Penalizes tokens repeated frequently to reduce redundancy.  
   - **Presence Penalty**: Penalizes tokens appearing early in the text to encourage variety.  
@@ -124,7 +130,8 @@ Generative AI models use adjustable parameters to control the nature, diversity,
 
 ## **Parameter Interaction**
 
-### **Adjusting Multiple Parameters Together**  
+### **Adjusting Multiple Parameters Together**
+
 - Parameters can be used in combination for tailored output control.  
   - **Example**:  
     - Temperature: `0.7`.  
@@ -151,35 +158,41 @@ Generative AI models use adjustable parameters to control the nature, diversity,
 
 ## **Best Practices**
 
-### **1. Start with Defaults**  
+### **1. Start with Defaults**
+
 - Begin with standard API values (e.g., Temperature = `0.7`, Top-p = `0.8`) before modifying.  
 
-### **2. Experiment Iteratively**  
+### **2. Experiment Iteratively**
+
 - Test different combinations to fine-tune the output style. Use the results to identify optimal params.  
 
-### **3. Assess Output Quality**  
+### **3. Assess Output Quality**
+
 - Evaluate the output’s relevance, coherence, and creativity based on your task requirements.  
 
-### **4. Document Parameter Configurations**  
-- Keep track of tested parameter setups for reproducibility.  
-  - Example:  
+### **4. Document Parameter Configurations**
+
+- Keep track of tested parameter setups for reproducibility.
+  - Example:
     ```plaintext
-    Task: Summarization  
-    Temperature: 0.2  
-    Top-p: 0.5  
-    Frequency Penalty: 0.4  
-    Success rate: 90%  
+    Task: Summarization
+    Temperature: 0.2
+    Top-p: 0.5
+    Frequency Penalty: 0.4
+    Success rate: 90%
     ```
 
 ---
 
 ## **Learning Resources**
 
-### **1. Tutorials**  
-- OpenAI Guide on Sampling:  
+### **1. Tutorials**
+
+- OpenAI Guide on Sampling:
   [https://platform.openai.com/docs/sample-gen-parameters](https://platform.openai.com/docs/sample-gen-parameters)  
 
-### **2. Courses**  
+### **2. Courses**
+
 - **Deep Learning Specialization** by Andrew Ng: Learn probability-based sampling techniques in NLP.  
   [https://www.coursera.org/specializations/deep-learning](https://www.coursera.org/specializations/deep-learning)
 
