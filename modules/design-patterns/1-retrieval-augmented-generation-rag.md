@@ -1,17 +1,4 @@
-# Core Architecture Patterns
-
-## 📘 Chapter 1: Retrieval-Augmented Generation (RAG)
-
-### 🎯 Learning Objectives
-
-By the end of this chapter, learners will be able to:
-
-* Understand the principles and components of Retrieval-Augmented Generation (RAG).
-* Implement a basic RAG system using Azure OpenAI and Azure AI Search.
-* Recognize the benefits and challenges associated with RAG systems.
-* Apply RAG patterns to real-world applications.([GitHub][1])
-
----
+## Retrieval-Augmented Generation (RAG)
 
 ### 🧠 What is Retrieval-Augmented Generation (RAG)?
 
@@ -80,7 +67,6 @@ Retrieval-Augmented Generation (RAG) is an architectural pattern that enhances t
 * [Azure-Samples/azure-search-openai-demo - GitHub](https://github.com/Azure-Samples/azure-search-openai-demo)
 
 ---
-
 
 [1]: https://github.com/Azure-Samples/azure-search-openai-demo?utm_source=chatgpt.com "Azure-Samples/azure-search-openai-demo - GitHub"
 [2]: https://aws.amazon.com/what-is/retrieval-augmented-generation/?utm_source=chatgpt.com "What is RAG? - Retrieval-Augmented Generation AI Explained - AWS"

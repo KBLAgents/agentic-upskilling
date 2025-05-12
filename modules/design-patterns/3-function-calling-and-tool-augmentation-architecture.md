@@ -1,19 +1,6 @@
-[![A Comprehensive Guide to Function Calling in LLMs - The New Stack](https://tse4.mm.bing.net/th?id=OIP.aDjr74-a3bsEVtQUuRyicgHaGC\&cb=iwp1\&pid=Api)](https://thenewstack.io/a-comprehensive-guide-to-function-calling-in-llms/)
-
-Certainly! Here's a comprehensive breakdown of **Part I: Core Architecture Patterns – Chapter 3: Function Calling & Tool Augmentation Architecture** for your upskilling course on "Generative AI Applications: Architecture and Design Patterns."
-
----
-
-## 📘 Chapter 3: Function Calling & Tool Augmentation Architecture
+## Function Calling & Tool Augmentation Architecture
 
 ### 🎯 Learning Objectives
-
-By the end of this chapter, learners will be able to:
-
-* Understand the principles and components of Function Calling and Tool Augmentation in LLMs.
-* Implement function calling to enhance LLM capabilities using external tools and APIs.
-* Recognize the benefits and challenges associated with function calling architectures.
-* Apply function calling patterns to real-world applications.
 
 ---
 
@@ -90,16 +77,14 @@ Function Calling, also known as Tool Augmentation, is a technique that enables L
    * Integrate the function's output into the LLM's response.
    * Present the final response to the user.
 
-**Access the Lab:** [OpenAI Function Calling Guide](https://platform.openai.com/docs/guides/function-calling)
+**Access the Lab:** [OpenAI Function with Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling)
 
 ---
 
 ### 📚 Additional Resources
 
-* [Function Calling in Generative AI](https://ugurozker.medium.com/function-calling-in-generative-ai-7c44a82ee956)
+* * [How to use function calling with Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling)
+* [Function Calling in OpenAI](https://platform.openai.com/docs/guides/function-calling?api-mode=responses)
 * [Function Calling with LLMs - Prompt Engineering Guide](https://www.promptingguide.ai/applications/function_calling)
-* [Introduction to Function Calling - Vertex AI](https://cloud.google.com/vertex-ai/generative-ai/docs/multimodal/function-calling)
 
 ---
-
-Would you like to proceed to **Chapter 4: Human-in-the-Loop (HITL) Architecture**?

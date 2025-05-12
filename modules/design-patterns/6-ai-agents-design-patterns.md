@@ -1,52 +1,29 @@
-# 🧩 Chapter 4: AI Agent Design Patterns
-
-### 🎯 Lesson Objectives
-
-By the end of this chapter, learners will be able to:
-
-* Understand the core principles of agentic AI systems
-* Identify and differentiate between key AI agent design patterns
-* Implement tool-using and multi-agent workflows using frameworks like LangChain and Semantic Kernel
-* Evaluate trade-offs in agent execution, memory, and orchestration strategies
-
----
-
-### 📚 Prerequisites
-
-* Intermediate understanding of Large Language Models (LLMs) and prompt engineering
-* Familiarity with Retrieval-Augmented Generation (RAG) and context management
-* Proficiency in Python programming
-* Access to OpenAI or Azure OpenAI API keys
-* Installed libraries: `langchain`, `semantic-kernel`, `openai`, `faiss` (optional)([The AiEdge Newsletter | Substack][1])
-
----
-
-### ⏱️ Estimated Duration
-
-* Lecture and Discussion: 90 minutes
-* Hands-on Lab: 60 minutes
-
----
-
-### 🧩 Topics Covered
-
-* Introduction to AI Agents
-* Anatomy of a Tool-Using LLM Agent
-* Core Agent Design Patterns:
-
-  * ReAct (Reason + Act)
-  * Self-Ask with Search
-  * Plan-and-Execute
-  * Tool-Augmented Agents (Function Calling)
-  * Multi-Agent Systems
-* Role of Memory and Context in Agents
-* Agent Orchestration Strategies([Introduction | 🦜️🔗 LangChain][2], [DEV Community][3], [Data Science Dojo][4])
+# AI Agent Design Patterns
 
 ---
 ![](https://markovate.com/wp-content/uploads/2024/06/Understanding-AI-Agents-1.webp)
 ### 🧠 Key Design Patterns Explained
 
-#### 1. **ReAct Pattern (Reason + Act)**
+#### 1. **Chain of Thought Prompting**
+
+* **Description**: Encourages the agent to think step-by-step by explicitly generating intermediate reasoning steps before arriving at a final answer.
+* **Use Case**: Solving complex problems that require logical reasoning or multi-step calculations.
+* **Example**:
+
+  ```python
+  from langchain.llms import OpenAI
+
+  llm = OpenAI(temperature=0)
+
+  prompt = """
+  Solve the following problem step-by-step:
+  If a train travels 60 miles per hour for 2 hours, then 30 miles per hour for 1 hour, how far does it travel in total?
+  """
+
+  response = llm(prompt)
+  print(response)
+  ```
+#### 2. **ReAct Pattern (Reason + Act)**
 
 * **Description**: Interleaves reasoning and acting steps, allowing the agent to generate thoughts, perform actions, and observe outcomes iteratively.
 * **Use Case**: General-purpose agents reasoning through multi-step tasks.
@@ -71,7 +48,7 @@ By the end of this chapter, learners will be able to:
 
 
 
-#### 2. **Self-Ask with Search**
+#### 3. **Self-Reflection with Search**
 
 * **Description**: The agent decomposes complex queries into sub-questions, answers them using search, and synthesizes the final answer.
 * **Use Case**: Open-domain question answering.
@@ -94,7 +71,7 @@ By the end of this chapter, learners will be able to:
 
 
 
-#### 3. **Plan-and-Execute Agent**
+#### 4. **Plan-and-Execute Agent**
 
 * **Description**: Separates the planning and execution phases; the agent first creates a plan and then executes each step.
 * **Use Case**: Workflow agents, automation pipelines.
@@ -113,8 +90,7 @@ By the end of this chapter, learners will be able to:
   ```
 
 
-
-#### 4. **Tool-Augmented Agent (Function Calling)**
+#### 5. **Tool-Augmented Agent (Function Calling)**
 
 * **Description**: The agent invokes external tools or APIs to fetch data or perform actions.
 * **Use Case**: Data lookup, email agents, automation.
@@ -136,34 +112,6 @@ By the end of this chapter, learners will be able to:
   response = agent.run("Schedule a meeting on the next sunny day.")
   print(response)
   ```
-
-
-
-#### 5. **Multi-Agent Systems**
-
-* **Description**: Comprises multiple specialized agents that communicate or collaborate to perform complex tasks.
-* **Use Case**: Modular systems with separate retriever, summarizer, generator agents.
-* **Example**:
-
-  ```python
-  from langchain.agents import initialize_agent, Tool
-  from langchain.llms import OpenAI
-
-  llm = OpenAI(temperature=0)
-
-  retriever_tool = Tool(name="Retriever", func=retriever_agent, description="Retrieve relevant documents")
-  summarizer_tool = Tool(name="Summarizer", func=summarizer_agent, description="Summarize documents")
-  generator_tool = Tool(name="Generator", func=generator_agent, description="Generate responses")
-
-  tools = [retriever_tool, summarizer_tool, generator_tool]
-
-  agent = initialize_agent(tools, llm, agent_type="multi-agent")
-  response = agent.run("Provide a summary of the latest research on AI agents.")
-  print(response)
-  ```
-
-
-
 ---
 
 ### ⚙️ Tools & Frameworks
@@ -228,19 +176,6 @@ agent = initialize_agent(tools, llm, agent_type="openai-functions")
 response = agent.run("A customer says their order is delayed. What should I do?")
 print(response)
 ```
-
-
-
----
-
-### 📈 Outcome
-
-By the end of this module, learners will be able to:
-
-* Design agents that use reasoning and tools to accomplish complex tasks.
-* Select appropriate patterns (ReAct, Plan-and-Execute, Multi-Agent) based on specific requirements.
-* Implement agents using frameworks like LangChain, Semantic Kernel, or AutoGen.
-* Extend agent capabilities through external tools and memory management.
 
 ---
 

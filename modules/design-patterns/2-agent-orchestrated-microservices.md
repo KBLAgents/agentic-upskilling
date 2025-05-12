@@ -1,13 +1,4 @@
-## 📘 Chapter 2: Agent-Orchestrated Microservices
-
-### 🎯 Learning Objectives
-
-By the end of this chapter, learners will be able to:
-
-* Understand the principles and components of Agent-Orchestrated Microservices.
-* Implement a basic agent-orchestrated system using modern tools.
-* Recognize the benefits and challenges associated with agent orchestration.
-* Apply agent orchestration patterns to real-world applications.
+## Agent-Orchestrated Microservices
 
 ---
 
@@ -61,18 +52,16 @@ Agent-Orchestrated Microservices is an architectural pattern that combines the m
 
 **Objective:** Build a simple system where AI agents manage and coordinate microservices to perform a composite task.
 
-**Access the Lab:** [Creating asynchronous AI agents with Amazon Bedrock](https://aws.amazon.com/blogs/machine-learning/creating-asynchronous-ai-agents-with-amazon-bedrock/)
+**Access the Lab:** [Creating an AI agent with Azure AI Agent Service](https://learn.microsoft.com/en-us/azure/ai-services/agents/quickstart?pivots=programming-language-python-azure)
 
 ---
 
 ### 📚 Additional Resources
 
 * [AI Agent Orchestration - IBM](https://www.ibm.com/think/topics/ai-agent-orchestration)
-* [Microagents: building better AI agents with microservices - Vectorize](https://vectorize.io/microagents-building-better-ai-agents-with-microservices/)
+* [What is Azure AI Agent Service](https://learn.microsoft.com/en-us/azure/ai-services/agents/overview)
 * [Four Design Patterns for Event-Driven, Multi-Agent Systems - Confluent](https://www.confluent.io/blog/event-driven-multi-agent-systems/)
-
+* [AI Agents are Microservices with Brains](https://seanfalconer.medium.com/ai-agents-are-microservices-with-brains-ccb42d1504d7)
 ---
-
-Would you like to proceed to **Chapter 3: Function Calling & Tool Augmentation Architecture**?
 
 [1]: https://www.wsj.com/articles/ai-agents-are-learning-how-to-collaborate-companies-need-to-work-with-them-28c7464d?utm_source=chatgpt.com "AI Agents Are Learning How to Collaborate. Companies Need to Work With Them"

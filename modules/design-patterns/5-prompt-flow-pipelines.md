@@ -1,21 +1,4 @@
-[![Rise of LLMOps : Prompt Flow Basics | by Manoranjan Rajguru | Medium](https://tse1.mm.bing.net/th/id/OIP.GicCRjeuvZJJTA4XAaLgcgHaDo?pid=Api)](https://medium.com/%40manoranjan.rajguru/rise-of-llmops-prompt-flow-basics-61ac6bf0e90e)
-
-Certainly! Here's a comprehensive breakdown of **Part I: Core Architecture Patterns – Chapter 5: Prompt Flow Pipelines** for your upskilling course on "Generative AI Applications: Architecture and Design Patterns."
-
----
-
-## 📘 Chapter 5: Prompt Flow Pipelines
-
-### 🎯 Learning Objectives
-
-By the end of this chapter, learners will be able to:
-
-* Understand the principles and components of Prompt Flow Pipelines.
-* Implement prompt flows to streamline LLM application development.
-* Recognize the benefits and challenges associated with prompt flow architectures.
-* Apply prompt flow patterns to real-world applications.
-
----
+##  Prompt Flow Pipelines
 
 ### 🧠 What are Prompt Flow Pipelines?
 
@@ -68,29 +51,8 @@ Prompt Flow Pipelines are structured workflows that orchestrate the sequence of 
 
 **Objective:** Build a prompt flow pipeline that integrates multiple components to perform a complex task.
 
-**Lab Steps:**
 
-1. **Set Up Azure Environment:**
-
-   * Create an Azure Machine Learning workspace.
-   * Configure necessary compute resources.([Microsoft Learn][3])
-
-2. **Design the Prompt Flow:**
-
-   * Define the sequence of operations, including prompts, tools, and control flows.
-   * Use the Azure Machine Learning studio to visually construct the pipeline.
-
-3. **Integrate Components:**
-
-   * Connect to external APIs or data sources as required.
-   * Implement evaluation metrics to assess performance.
-
-4. **Deploy and Monitor:**
-
-   * Deploy the pipeline as a web service or endpoint.
-   * Monitor performance and make iterative improvements.
-
-**Access the Lab:** [Get started with prompt flow - Azure Machine Learning](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/get-started-prompt-flow?view=azureml-api-2)([Microsoft Learn][3])
+**Access the Lab:** [Develop a prompt flow with Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/how-to/flow-develop)([Microsoft Learn][3])
 
 ---
 
@@ -101,8 +63,6 @@ Prompt Flow Pipelines are structured workflows that orchestrate the sequence of 
 * [GitHub - microsoft/promptflow: Build high-quality LLM apps](https://github.com/microsoft/promptflow)([Microsoft Learn][4], [Medium][5], [GitHub][6])
 
 ---
-
-Would you like to proceed to **Part II: Reasoning and Planning Patterns – Chapter 6: Chain-of-Thought Prompting**?
 
 [1]: https://medium.com/%40manoranjan.rajguru/rise-of-llmops-prompt-flow-basics-61ac6bf0e90e?utm_source=chatgpt.com "Rise of LLMOps : Prompt Flow Basics | by Manoranjan Rajguru | Medium"
 [2]: https://cloud.google.com/blog/topics/developers-practitioners/what-data-pipeline-architecture-should-i-use?utm_source=chatgpt.com "What Data Pipeline Architecture should I use? | Google Cloud Blog"

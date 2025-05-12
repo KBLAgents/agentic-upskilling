@@ -1,21 +1,4 @@
-[![What is human-in-the-loop AI?](https://tse1.mm.bing.net/th?id=OIP.9BS2LrWguia_b6rMTqXqEQHaE_\&pid=Api)](https://humanloop.com/blog/human-in-the-loop-ai)
-
-Certainly! Here's a comprehensive breakdown of **Part I: Core Architecture Patterns – Chapter 4: Human-in-the-Loop (HITL) Architecture** for your upskilling course on "Generative AI Applications: Architecture and Design Patterns."
-
----
-
-## 📘 Chapter 4: Human-in-the-Loop (HITL) Architecture
-
-### 🎯 Learning Objectives
-
-By the end of this chapter, learners will be able to:
-
-* Understand the principles and components of Human-in-the-Loop (HITL) architectures.
-* Implement HITL workflows to enhance AI system performance and reliability.
-* Recognize the benefits and challenges associated with HITL systems.
-* Apply HITL patterns to real-world applications requiring human oversight.
-
----
+## Human-in-the-Loop (HITL) Architecture
 
 ### 🧠 What is Human-in-the-Loop (HITL) Architecture?
 
@@ -32,7 +15,7 @@ Human-in-the-Loop (HITL) architecture is a design paradigm where human judgment 
 
 ### 🏗️ HITL Architecture Overview
 
-![Human-in-the-Loop Architecture Diagram](https://humanloop.com/blog/human-in-the-loop-ai)
+![Human-in-the-Loop Architecture Diagram](https://www.miquido.com/wp-content/uploads/2024/10/image-4-700x454.png.webp)
 
 **Components:**
 
@@ -90,7 +73,7 @@ Human-in-the-Loop (HITL) architecture is a design paradigm where human judgment 
    * Capture human corrections and feed them back into the AI model for retraining.
    * Monitor improvements in model performance over time.
 
-**Access the Lab:** [LangChain Human-in-the-Loop Workflow](https://langchain-ai.github.io/langgraph/concepts/human_in_the_loop/)
+**Access the Lab:** [Semantic Kernel Human-in-the-Loop](https://learn.microsoft.com/en-us/semantic-kernel/frameworks/process/examples/example-human-in-loop?pivots=programming-language-python)
 
 ---
 
@@ -101,5 +84,3 @@ Human-in-the-Loop (HITL) architecture is a design paradigm where human judgment 
 * [Designing Effective Human-in-the-Loop Systems for AI Evaluation](https://weareshaip.medium.com/designing-effective-human-in-the-loop-systems-for-ai-evaluation-e1a0588b1804)
 
 ---
-
-Would you like to proceed to **Chapter 5: Prompt Flow Pipelines**?
