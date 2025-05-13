@@ -83,7 +83,7 @@ Function Calling, also known as Tool Augmentation, is a technique that enables L
 
 ### 📚 Additional Resources
 
-* * [How to use function calling with Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling)
+* [How to use function calling with Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling)
 * [Function Calling in OpenAI](https://platform.openai.com/docs/guides/function-calling?api-mode=responses)
 * [Function Calling with LLMs - Prompt Engineering Guide](https://www.promptingguide.ai/applications/function_calling)
 

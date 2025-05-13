@@ -41,7 +41,7 @@ Multi-modal AI systems typically consist of the following components:
 * **Image Captioning:** Generating descriptive text for images, useful in accessibility and content management.
 * **Speech-to-Text with Contextual Understanding:** Transcribing spoken words into text while considering visual or situational context.
 * **Medical Diagnostics:** Combining patient records, imaging data, and clinical notes for comprehensive analysis.
-* **Interactive Virtual Assistants:** Assistants that can process voice commands, recognize faces, and interpret gestures.([Fusion Chat][1])
+* **Interactive Virtual Assistants:** Assistants that can process voice commands, recognize faces, and interpret gestures.
 
 ---
 
@@ -64,5 +64,3 @@ Multi-modal AI systems typically consist of the following components:
 * [Multimodal Generative AI: A Comprehensive Overview](https://www.codica.com/blog/a-comprehensive-overview-of-multimodal-generative-ai/)
 
 ---
-
-[1]: https://fusionchat.ai/news/the-rise-of-multimodal-aia-game-changer?utm_source=chatgpt.com "The Rise Of Multimodal AI—A Game Changer - Fusion Chat"
