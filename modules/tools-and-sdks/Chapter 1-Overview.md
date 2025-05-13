@@ -9,12 +9,13 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
 ## Table of Contents
 
 - [Foundation Models](#foundation-models)
-  - [OpenAI API](#openai-api)
   - [ChatGPT series](#chatgpt-series)
   - [Whisper](#whisper)
-  - [DALL·E](#dall·e)
+  - [DALL·E](#dalle)
   - [Embeddings API](#embeddings-api)
+  - [OpenAI API](#openai-api)
   - [Claude 3.7 Sonnet (Anthropic)](#claude-37-sonnet-anthropic)
+  - [Other Foundation Models](#other-foundation-models)
 - [Retrieval-Augmented Generation (RAG)](#retrieval-augmented-generation-rag)
   - [Azure AI Search](#azure-ai-search)
   - [LlamaIndex](#llamaindex)
@@ -28,40 +29,14 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
   - [Azure OpenAI Service](#azure-openai-service)
   - [Azure AI Foundry](#azure-ai-foundry)
   - [Azure AI Services](#azure-ai-services)
-- [Evaluation](#evaluation)
-  - [LangChain `agent-eval`](#langchain-agent-eval)
-  - [OpenAI `evals`](#openai-evals)
-  - [Azure AI Evaluation SDK](#azure-ai-evaluation-sdk)
-  - [Weights & Biases (W&B)](#weights--biases-wb)
+  - [Other Cloud GenAI Platforms](#other-cloud-genai-platforms)
 - [Code Generation](#code-generation)
   - [GitHub Copilot](#github-copilot)
   - [Microsoft Copilot Stack](#microsoft-copilot-stack)
-  - [Amazon CodeWhisperer](#amazon-codewhisperer)
 
 ---
 
 ## Foundation Models
-
-### OpenAI API
-
-- **Purpose**: Access foundation models for text, image, and audio generation  
-- **Key Features**:
-  - Chat/completion (GPT-4, GPT-3.5)
-  - Function calling, JSON mode
-  - Embeddings and file uploads
-  - DALL·E (text-to-image + editing), Whisper (speech-to-text)
-- **Use Cases**: Conversational AI, content generation, code assistants, summarization, search
-- **SDKs**: `openai` Python SDK, Node.js SDK, REST API
-- **Access / Languages**: Python, JavaScript/TypeScript, REST
-- **Resources**:
-  - [OpenAI API Documentation](https://platform.openai.com/docs/introduction)
-  - [OpenAI Python SDK](https://pypi.org/project/openai/)
-  - [OpenAI Node.js SDK](https://www.npmjs.com/package/openai)
-  - [OpenAI REST API](https://platform.openai.com/docs/api-reference/introduction)
-- **When to Use**: General-purpose AI applications, chatbots, content generation, RAG, code assistants.
-- **When Not to Use**: If constrained by data locality or seeking open-source alternatives.
-
----
 
 ### ChatGPT series
 
@@ -103,7 +78,7 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
 - **Purpose**: Generate and edit images from natural language prompts  
 - **Key Features**:
   - Text-to-image
-  - Inpainting (natural language image editing)
+  - In-painting (natural language image editing)
   - Available within ChatGPT + API
 - **SDKs**: `openai.Image.create()` via Python SDK and Node.js SDK
 - **Access / Languages**: Python, Node.js, ChatGPT UI
@@ -129,10 +104,31 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
 
 ---
 
+### OpenAI API
+
+- **Purpose**: Access foundation models for text, image, and audio generation  
+- **Key Features**:
+  - Chat/completion (GPT-4, GPT-3.5)
+  - Function calling, JSON mode
+  - Embeddings and file uploads
+  - DALL·E (text-to-image + editing), Whisper (speech-to-text)
+- **Use Cases**: Conversational AI, content generation, code assistants, summarization, search
+- **SDKs**: `openai` Python SDK, Node.js SDK, REST API
+- **Access / Languages**: Python, JavaScript/TypeScript, REST
+- **Resources**:
+  - [OpenAI API Documentation](https://platform.openai.com/docs/introduction)
+  - [OpenAI Python SDK](https://pypi.org/project/openai/)
+  - [OpenAI Node.js SDK](https://www.npmjs.com/package/openai)
+  - [OpenAI REST API](https://platform.openai.com/docs/api-reference/introduction)
+- **When to Use**: General-purpose AI applications, chat bots, content generation, Retrieval-Augmented Generation (RAG), code assistants.
+- **When Not to Use**: If constrained by data locality or seeking open-source alternatives.
+
+---
+
 ### Claude 3.7 Sonnet (Anthropic)
 
 - **Purpose**: Conversational AI with long context understanding.
-- **Key Features**: 
+- **Key Features**:
   - High-quality responses
   - safety-focused design
 - **SDKs**: [`anthropic`](https://pypi.org/project/anthropic/)
@@ -143,21 +139,28 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
 
 ---
 
+### Other Foundation Models
+
+Other models like Mistral, LLaMA, DeepSeek, Gemini etc. are available and can be used as alternatives.
+They are not covered in this chapter as they are not related to the targeted upskilling.
+
+---
+
 ## Retrieval-Augmented Generation (RAG)
 
 ### Azure AI Search
 
 - **Purpose**: Enterprise-grade vector and hybrid search engine used to power RAG pipelines by indexing and retrieving relevant documents or chunks.
 - **Key Features**:
-  - Native vector search with support for HNSW algorithm
-  - Semantic ranking and hybrid search (BM25 + embeddings)
+  - Native vector search with support for [HNSW algorithm](https://en.wikipedia.org/wiki/Hierarchical_Navigable_Small_World)
+  - Semantic ranking and hybrid search ([BM25](https://python.langchain.com/docs/integrations/retrievers/bm25/) + embeddings)
   - Built-in integration with Azure OpenAI for RAG
   - Indexers for data sources (blob storage, SQL, etc.)
   - Enrichment pipeline (OCR, entity recognition, key phrases)
   - Role-based access and encryption
   - Multi-lingual support and custom analyzers
 - **SDKs / Tools**:
-  - Azure SDKs for Python, .NET, JavaScript, Java, REST API, Azure AI Studio integration 
+  - Azure SDKs for Python, .NET, JavaScript, Java, REST API, Azure AI Studio integration
 - **Resources**:
   - [Azure AI Search Docs](https://learn.microsoft.com/en-us/azure/search/search-what-is-azure-search)
 - **When to Use**: enterprise RAG with Azure-hosted data, needing tight integration with Azure OpenAI, RBAC, security, hybrid or semantic search
@@ -324,87 +327,10 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
 
 ---
 
-## Evaluation
+### Other Cloud GenAI Platforms
 
-### LangChain `agent-eval`
-
-- **Purpose**: Evaluation suite purpose-built for **LLM agents**, workflows, and tool-augmented reasoning systems.
-- **Key Features**:
-  - Tracks **task success rates**, number of steps, and tool usage
-  - Supports **LLM-as-a-judge** evaluation paradigms
-  - Compatible with LangChain agents and toolchains
-  - Provides experiment logging and analysis via Pandas or JSON
-- **SDKs / Tools**:
-  - `langchain-experimental` Python module
-  - Integrates with LangChain agents, chains, and toolsets
-- **Resources**:
-  - [LangChain Agent Eval Docs](https://python.langchain.com/docs/guides/evaluation/agent_eval/)
-  - [LangChain GitHub](https://github.com/langchain-ai/langchain)
-- **When to Use**:
-  - You’re building **autonomous agents** and need to evaluate behavior
-  - You want **LLM-driven grading** for complex or subjective outcomes
-- **When Not to Use**:
-  - You’re only evaluating static prompts or completion outputs
-  - You're working outside the LangChain ecosystem
-
----
-
-### OpenAI `evals`
-
-- **Purpose**: Evaluate the performance of LLMs through custom test suites using a standardized framework.
-- **Key Features**:
-  - Create reusable eval tasks for different LLM capabilities (e.g., QA, math, reasoning)
-  - Supports ground truth comparisons, scoring logic, and aggregation
-  - Comes with templates and built-in evals (e.g., `math`, `qa`, `code`)
-  - Supports batch and streaming evaluation of OpenAI models
-- **SDKs / Tools**: `openai-evals`
-- **Resources**:
-  - [OpenAI Evals GitHub](https://github.com/openai/evals)
-  - [Evals Framework Overview](https://platform.openai.com/docs/guides/evals)
-- **When to Use**:
-  - You want **automated performance tracking** of OpenAI models across releases or custom tasks
-  - You're building **custom benchmarks** (e.g., for QA or summarization)
-- **When Not to Use**: You're not using OpenAI , You need visual UI or enterprise deployment monitoring
-
----
-
-### Azure AI Evaluation SDK
-
-- **Purpose**:  
-  Tooling within Azure AI Studio for **evaluating generative outputs**, scoring relevance, hallucinations, and safety.
-- **Key Features**:
-  - Automatic and manual evaluation modes
-  - Built-in support for **synthetic data generation**
-  - Evaluates across dimensions like **grounding**, **fluency**, and **toxicity**
-  - Integrates with Prompt Flow and Azure OpenAI models
-- **SDKs / Tools**: Azure AI SDKs, Azure AI Studio UI and CLI integration
-- **Resources**:
-  - [Azure AI Studio](https://ai.azure.com/)
-  - [Azure AI Foundry Docs](https://learn.microsoft.com/en-us/azure/ai-foundry/)
-- **When to Use**:
-  - You work in **Azure ecosystem** and need enterprise-grade tools
-  - You want **scalable eval pipelines** with built-in metrics
-- **When Not to Use**:
-  - You’re outside Azure or prefer open-source stack
-  - You want code-level customization or raw eval framework
-
----
-
-### Weights & Biases (W&B)
-
-- **Purpose**: Experiment tracking, visualization, and debugging platform for machine learning and generative models.
-- **Key Features**:
-  - Track training runs, hyperparameters, outputs, and comparisons
-  - Integrated with Hugging Face, OpenAI, LangChain, PyTorch, and more
-  - Visualize token usage, loss curves, embeddings, and generations
-  - Supports collaboration and versioning for experiments
-- **SDKs / Tools**: [`wandb` Python SDK](https://pypi.org/project/wandb/), Web dashboard with project and report views
-- **Resources**:
-  - [Weights & Biases Website](https://wandb.ai/)
-  - [W&B Docs](https://docs.wandb.ai/)
-  - [Open LLM Leaderboard](https://huggingface.co/spaces/HuggingFaceH4/open-llm-leaderboard)
-- **When to Use**: deep observability into model development, iterative experiments with multiple configs
-- **When Not to Use**: quick demos or one-off evaluations, closed-source / enterprise-only tools
+Other cloud platforms like AWS, Google Cloud, and IBM Watson also offer AI services and models.
+They are not covered in this chapter as they are not related to the targeted upskilling.
 
 ---
 
@@ -444,20 +370,3 @@ High-level overview of the AI tools and SDKs available. This chapter will help y
   - [Microsoft Copilot Overview](https://www.microsoft.com/en-us/microsoft-365/copilot)
 - **When to Use**: Writing, analysis, coding, summarization, CRM workflows. For users of Microsoft 365, GitHub, and Dynamics looking for AI enhancements
 - **When Not to Use**: If you prefer open-source or non-Microsoft tools, or if you need custom integrations outside the Microsoft ecosystem.
-
----
-
-### Amazon CodeWhisperer
-
-- **Purpose**: AI-powered coding companion from AWS that provides real-time code suggestions and security scans across multiple programming languages and IDEs.
-- **Key Features**:
-  - Context-aware autocomplete and inline code suggestions
-  - Trained on Amazon’s internal code and open-source datasets
-  - Security scanning for common vulnerabilities (e.g., injection, credentials)
-  - Support for AWS SDKs and code generation for AWS services
-  - Reference tracking to show if code suggestions are similar to open-source licenses
-- **SDKs / Tools**: IDE plugins for VS Code, JetBrains, and AWS Cloud9
-- **Resources**:
-  - [CodeWhisperer Overview](https://aws.amazon.com/codewhisperer/)
-- **When to Use**: AWS ecosystem, Security-aware suggestions, licensing transparency
-- **When Not to Use**: preference for Microsoft-native tools
