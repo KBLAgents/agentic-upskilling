@@ -49,38 +49,11 @@ A typical multi-agent system architecture includes:([SmythOS][1])
 
 | Challenge                                                                       | Description |
 | ------------------------------------------------------------------------------- | ----------- |
-| **Complexity:** Designing interactions among numerous agents can be intricate.  |             |
-| **Scalability:** Ensuring system performance as the number of agents increases. |             |
-| **Communication Overhead:** Managing the volume of inter-agent messages.        |             |
-| **Conflict Resolution:** Handling situations where agents have competing goals. |             |
+| **Complexity:**   | Designing interactions among numerous agents can be intricate.            |
+| **Scalability:**  | Ensuring system performance as the number of agents increases.            |
+| **Communication Overhead:**         | Managing the volume of inter-agent messages.            |
+| **Conflict Resolution:**  | Handling situations where agents have competing goals.            |
 
----
-
-### 🛠️ Hands-On Lab: Developing a Multi-Agent System
-
-**Objective:** Build a simple multi-agent system where agents collaborate to complete a task, such as resource allocation or pathfinding.
-
-**Lab Steps:**
-
-1. **Set Up Environment:**
-
-   * Choose a programming language and framework suitable for MAS development (e.g., Python with SPADE).([SmythOS][6])
-
-2. **Define Agent Roles:**
-
-   * Specify the purpose and behavior of each agent in the system.
-
-3. **Implement Communication:**
-
-   * Establish protocols for agents to exchange information.
-
-4. **Develop Coordination Mechanism:**
-
-   * Design strategies for agents to work together effectively.
-
-5. **Test and Evaluate:**
-
-   * Run simulations to observe agent interactions and system performance.
 
 ---
 
