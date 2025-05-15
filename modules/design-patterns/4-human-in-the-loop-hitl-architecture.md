@@ -47,36 +47,6 @@ Human-in-the-Loop (HITL) architecture is a design paradigm where human judgment 
 
 ---
 
-### 🛠️ Hands-On Lab: Implementing HITL with LangChain
-
-**Objective:** Build a system where AI outputs are reviewed and corrected by humans to improve overall performance.
-
-**Lab Steps:**
-
-1. **Set Up Environment:**
-
-   * Install LangChain and necessary dependencies.
-   * Configure access to a language model (e.g., OpenAI's GPT).
-
-2. **Develop AI Model:**
-
-   * Create a simple AI model to perform a task (e.g., text classification).
-   * Implement a confidence scoring mechanism to assess output reliability.
-
-3. **Integrate Human Interface:**
-
-   * Design an interface to present low-confidence outputs to human reviewers.
-   * Allow reviewers to accept, modify, or reject AI outputs.
-
-4. **Implement Feedback Loop:**
-
-   * Capture human corrections and feed them back into the AI model for retraining.
-   * Monitor improvements in model performance over time.
-
-**Access the Lab:** [Semantic Kernel Human-in-the-Loop](https://learn.microsoft.com/en-us/semantic-kernel/frameworks/process/examples/example-human-in-loop?pivots=programming-language-python)
-
----
-
 ### 📚 Additional Resources
 
 * [Human-in-the-Loop (HITL) in AI & ML - Google Cloud](https://cloud.google.com/discover/human-in-the-loop)

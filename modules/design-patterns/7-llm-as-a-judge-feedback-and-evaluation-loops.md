@@ -49,41 +49,6 @@ LLM-as-a-Judge refers to the practice of utilizing Large Language Models (LLMs) 
 
 ---
 
-### 🛠️ Hands-On Lab: Implementing LLM-as-a-Judge with Amazon Bedrock
-
-**Objective:** Build an automated evaluation pipeline using Amazon Bedrock's LLM-as-a-Judge capabilities to assess AI-generated outputs.([Amazon Web Services, Inc.][3])
-
-**Lab Steps:**
-
-1. **Set Up Environment:**
-
-   * Create an AWS account and configure Amazon Bedrock.
-   * Prepare evaluation datasets and store them in Amazon S3.([Amazon Web Services, Inc.][3])
-
-2. **Design Evaluation Prompts:**
-
-   * Develop prompt templates targeting specific evaluation criteria (e.g., correctness, coherence).
-   * Incorporate few-shot examples to guide the Judge LLM's assessments.([Philschmid][6], [Arize AI][1])
-
-3. **Configure Evaluation Jobs:**
-
-   * Use Amazon Bedrock's console or APIs to set up evaluation jobs.
-   * Select appropriate Judge LLMs and link evaluation prompts and datasets.([Arize AI][1])
-
-4. **Execute and Monitor Evaluations:**
-
-   * Run evaluation jobs and monitor their progress.
-   * Collect and analyze evaluation results, focusing on key metrics.([Amazon Web Services, Inc.][3])
-
-5. **Integrate Feedback Loop:**
-
-   * Use evaluation insights to refine model outputs and improve performance.
-   * Establish continuous evaluation mechanisms for ongoing quality assurance.
-
-**Access the Lab:** [LLM-as-a-Judge on Amazon Bedrock Model Evaluation](https://aws.amazon.com/blogs/machine-learning/llm-as-a-judge-on-amazon-bedrock-model-evaluation/)([Amazon Web Services, Inc.][3])
-
----
-
 ### 📚 Additional Resources
 
 * [LLM-as-a-Judge: A Complete Guide to Using LLMs for Evaluations - Evidently AI](https://www.evidentlyai.com/llm-guide/llm-as-a-judge)

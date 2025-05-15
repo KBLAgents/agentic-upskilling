@@ -125,68 +125,9 @@
   ```
 ---
 
-### ⚙️ Tools & Frameworks
-
-* **LangChain Agents**: Supports ReAct, Plan-and-Execute, Tool Agents.
-* **Semantic Kernel Planners**: Goal-oriented planning with skill execution.
-* **AutoGen**: Framework for building collaborative, tool-using AI agents.
-* **Azure AI Agents**: Agent orchestration platform (Preview).([LangChain Blog][5])
-
----
-
 ### 🛠️ Hands-On Lab: Building a Tool-Using Support Agent
 
-#### Lab Objective:
-
-Build a support chatbot that utilizes:
-
-* LLM reasoning
-* Tools to retrieve knowledge (e.g., FAQ database)
-* Tools to update user status
-* Short-term memory to maintain context([YouTube][6])
-
-#### Lab Tools:
-
-* LangChain (Python)
-* FAISS (for document retrieval)
-* OpenAI GPT-4 (for agent reasoning)
-
-#### Lab Tasks:
-
-1. Define two tools:
-
-   * `get_faq_answer(question)`
-   * `update_user_status(user_id, status)`
-2. Use LangChain's `initialize_agent` with the ReAct or OpenAI function-based agent.
-3. Add a simple in-memory buffer for chat history.
-4. Run an interactive agent loop with sample user queries.
-
-#### Sample Code Snippet:
-
-```python
-from langchain.agents import initialize_agent, Tool
-from langchain.llms import OpenAI
-
-def get_faq_answer(question):
-    # Implement retrieval logic here
-    return "This is a placeholder answer to your FAQ."
-
-def update_user_status(user_id, status):
-    # Implement status update logic here
-    return f"User {user_id} status updated to {status}."
-
-llm = OpenAI(temperature=0)
-
-tools = [
-    Tool(name="GetFAQAnswer", func=get_faq_answer, description="Lookup product FAQ"),
-    Tool(name="UpdateUserStatus", func=update_user_status, description="Update user status in CRM")
-]
-
-agent = initialize_agent(tools, llm, agent_type="openai-functions")
-
-response = agent.run("A customer says their order is delayed. What should I do?")
-print(response)
-```
+[Build an Agent using File Search Tool](https://learn.microsoft.com/en-us/semantic-kernel/frameworks/agent/examples/example-assistant-search?pivots=programming-language-python)
 
 ---
 

@@ -1,15 +1,4 @@
-## 📘 Chapter 17: Multi-Agent Systems
-
-### 🎯 Learning Objectives
-
-By the end of this chapter, learners will be able to:
-
-* Understand the principles and components of multi-agent systems (MAS) in AI.
-* Recognize the benefits and challenges associated with deploying MAS.
-* Explore real-world applications and use cases of MAS across various industries.
-* Apply best practices in designing and implementing MAS architectures.
-
----
+## Multi-Agent Systems
 
 ### 🧠 What Are Multi-Agent Systems?
 

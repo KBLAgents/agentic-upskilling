@@ -53,7 +53,7 @@ Safety and guardrail architectures are frameworks and mechanisms designed to mon
 
 **Objective:** Build a system that integrates safety and guardrail mechanisms using Amazon Bedrock to ensure responsible AI outputs.
 
-**Access the Lab:** [Build Safe and Responsible Generative AI Applications with Guardrails](https://aws.amazon.com/blogs/machine-learning/build-safe-and-responsible-generative-ai-applications-with-guardrails/)([Amazon Web Services, Inc.][6])
+**Access the Lab:** [Implement a responsible generative AI solution in Azure AI Foundry](https://learn.microsoft.com/en-us/training/modules/responsible-ai-studio/?source=recommendations)
 
 ---
 
