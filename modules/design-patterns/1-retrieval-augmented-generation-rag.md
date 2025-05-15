@@ -1,6 +1,6 @@
-## Retrieval-Augmented Generation (RAG)
+# Retrieval-Augmented Generation (RAG)
 
-### 🧠 What is Retrieval-Augmented Generation (RAG)?
+## 🧠 What is Retrieval-Augmented Generation (RAG)?
 
 Retrieval-Augmented Generation (RAG) is an architectural pattern that enhances the capabilities of Large Language Models (LLMs) by integrating external knowledge sources into the generation process. Instead of relying solely on the information contained within the model's parameters, RAG retrieves relevant data from external sources (like databases or document repositories) and uses this information to generate more accurate and contextually relevant responses.
 
@@ -13,7 +13,7 @@ Retrieval-Augmented Generation (RAG) is an architectural pattern that enhances t
 
 ---
 
-### 🏗️ RAG Architecture Overview
+## 🏗️ RAG Architecture Overview
 
 ![RAG Architecture Diagram](https://bingows.sg/v2/static/picture/65982e165de858b7c41f4fa3_Img%201.webp)
 
@@ -31,7 +31,7 @@ Retrieval-Augmented Generation (RAG) is an architectural pattern that enhances t
 
 ---
 
-### 🔍 Use Cases
+## 🔍 Use Cases
 
 * **Customer Support:** Providing accurate answers by retrieving information from product manuals or FAQs.
 * **Legal Research:** Assisting in legal document analysis by accessing relevant case laws and statutes.
@@ -40,7 +40,7 @@ Retrieval-Augmented Generation (RAG) is an architectural pattern that enhances t
 
 ---
 
-### ⚖️ Trade-offs and Challenges
+## ⚖️ Trade-offs and Challenges
 
 | Challenge         | Description                                                                    |   |
 | ----------------- | ------------------------------------------------------------------------------ | - |
@@ -51,7 +51,7 @@ Retrieval-Augmented Generation (RAG) is an architectural pattern that enhances t
 
 ---
 
-### 🛠️ Hands-On Lab: Implementing RAG with Azure OpenAI and Azure AI Search
+## 🛠️ Hands-On Lab: Implementing RAG with Azure OpenAI and Azure AI Search
 
 **Objective:** Build a RAG system that retrieves information from a custom dataset to answer user queries.
 * Input various queries and evaluate the accuracy and relevance of the responses.
@@ -60,7 +60,7 @@ Retrieval-Augmented Generation (RAG) is an architectural pattern that enhances t
 
 ---
 
-### 📚 Additional Resources
+## 📚 Additional Resources
 
 * [Design and Develop a RAG Solution - Azure Architecture Center](https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/rag/rag-solution-design-and-evaluation-guide)
 * [Retrieval Augmented Generation (RAG) in Azure AI Search](https://learn.microsoft.com/en-us/azure/search/retrieval-augmented-generation-overview)

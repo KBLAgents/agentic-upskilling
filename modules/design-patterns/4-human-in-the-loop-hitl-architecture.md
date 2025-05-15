@@ -1,6 +1,6 @@
-## Human-in-the-Loop (HITL) Architecture
+# Human-in-the-Loop (HITL) Architecture
 
-### 🧠 What is Human-in-the-Loop (HITL) Architecture?
+## 🧠 What is Human-in-the-Loop (HITL) Architecture?
 
 Human-in-the-Loop (HITL) architecture is a design paradigm where human judgment is integrated into the AI system's decision-making process. This approach ensures that AI models can be corrected, guided, or enhanced by human input, particularly in scenarios where automated systems may face uncertainty, ethical dilemmas, or require contextual understanding.
 
@@ -13,7 +13,7 @@ Human-in-the-Loop (HITL) architecture is a design paradigm where human judgment 
 
 ---
 
-### 🏗️ HITL Architecture Overview
+## 🏗️ HITL Architecture Overview
 
 ![Human-in-the-Loop Architecture Diagram](https://www.miquido.com/wp-content/uploads/2024/10/image-4-700x454.png.webp)
 
@@ -27,7 +27,7 @@ Human-in-the-Loop (HITL) architecture is a design paradigm where human judgment 
 
 ---
 
-### 🔍 Use Cases
+## 🔍 Use Cases
 
 * **Content Moderation:** AI filters content, but humans review borderline cases to ensure appropriate decisions.
 * **Medical Diagnosis:** AI suggests diagnoses, which are then confirmed or adjusted by medical professionals.
@@ -36,7 +36,7 @@ Human-in-the-Loop (HITL) architecture is a design paradigm where human judgment 
 
 ---
 
-### ⚖️ Trade-offs and Challenges
+## ⚖️ Trade-offs and Challenges
 
 | Challenge               | Description                                                           |   |
 | ----------------------- | --------------------------------------------------------------------- | - |
@@ -47,7 +47,7 @@ Human-in-the-Loop (HITL) architecture is a design paradigm where human judgment 
 
 ---
 
-### 📚 Additional Resources
+## 📚 Additional Resources
 
 * [Human-in-the-Loop (HITL) in AI & ML - Google Cloud](https://cloud.google.com/discover/human-in-the-loop)
 * [Building Generative AI Prompt Chaining Workflows with HITL - AWS](https://aws.amazon.com/blogs/machine-learning/building-generative-ai-prompt-chaining-workflows-with-human-in-the-loop/)

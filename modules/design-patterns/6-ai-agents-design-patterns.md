@@ -2,9 +2,9 @@
 
 ---
 ![](https://markovate.com/wp-content/uploads/2024/06/Understanding-AI-Agents-1.webp)
-### 🧠 Key Design Patterns Explained
+## 🧠 Key Design Patterns Explained
 
-#### 1. **Chain of Thought Prompting**
+### 1. **Chain of Thought Prompting**
 
 * **Description**: Encourages the agent to think step-by-step by explicitly generating intermediate reasoning steps before arriving at a final answer.
 * **Use Case**: Solving complex problems that require logical reasoning or multi-step calculations.
@@ -23,7 +23,7 @@
   response = llm(prompt)
   print(response)
   ```
-#### 2. **ReAct Pattern (Reason + Act)**
+### 2. **ReAct Pattern (Reason + Act)**
 
 * **Description**: Interleaves reasoning and acting steps, allowing the agent to generate thoughts, perform actions, and observe outcomes iteratively.
 * **Use Case**: General-purpose agents reasoning through multi-step tasks.
@@ -59,7 +59,7 @@
   print(response)
   ```
 
-#### 3. **Self-Reflection with Search**
+### 3. **Self-Reflection with Search**
 
 * **Description**: The agent decomposes complex queries into sub-questions, answers them using search, and synthesizes the final answer.
 * **Use Case**: Open-domain question answering.
@@ -82,7 +82,7 @@
 
 
 
-#### 4. **Plan-and-Execute Agent**
+### 4. **Plan-and-Execute Agent**
 
 * **Description**: Separates the planning and execution phases; the agent first creates a plan and then executes each step.
 * **Use Case**: Workflow agents, automation pipelines.
@@ -101,7 +101,7 @@
   ```
 
 
-#### 5. **Tool-Augmented Agent (Function Calling)**
+### 5. **Tool-Augmented Agent (Function Calling)**
 
 * **Description**: The agent invokes external tools or APIs to fetch data or perform actions.
 * **Use Case**: Data lookup, email agents, automation.
@@ -125,13 +125,13 @@
   ```
 ---
 
-### 🛠️ Hands-On Lab: Building a Tool-Using Support Agent
+## 🛠️ Hands-On Lab: Building a Tool-Using Support Agent
 
 [Build an Agent using File Search Tool](https://learn.microsoft.com/en-us/semantic-kernel/frameworks/agent/examples/example-assistant-search?pivots=programming-language-python)
 
 ---
 
-### 🔗 Resources
+## 🔗 Resources
 
 * [LangChain Agents Documentation](https://docs.langchain.com/docs/components/agents)
 * [AutoGen by Microsoft](https://github.com/microsoft/autogen)

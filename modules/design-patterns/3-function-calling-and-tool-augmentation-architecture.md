@@ -1,10 +1,10 @@
-## Function Calling & Tool Augmentation Architecture
+# Function Calling & Tool Augmentation Architecture
 
-### 🎯 Learning Objectives
+## 🎯 Learning Objectives
 
 ---
 
-### 🧠 What is Function Calling & Tool Augmentation?
+## 🧠 What is Function Calling & Tool Augmentation?
 
 Function Calling, also known as Tool Augmentation, is a technique that enables Large Language Models (LLMs) to interact with external tools, APIs, or services by generating structured outputs that specify which functions to call and with what parameters. This approach allows LLMs to perform actions beyond text generation, such as retrieving real-time data, performing calculations, or interacting with databases.
 
@@ -17,7 +17,7 @@ Function Calling, also known as Tool Augmentation, is a technique that enables L
 
 ---
 
-### 🏗️ Architecture Overview
+## 🏗️ Architecture Overview
 
 ![Function Calling Architecture Diagram](https://cloud.google.com/static/vertex-ai/generative-ai/docs/multimodal/images/function-calling.png)
 
@@ -31,7 +31,7 @@ Function Calling, also known as Tool Augmentation, is a technique that enables L
 
 ---
 
-### 🔍 Use Cases
+## 🔍 Use Cases
 
 * **Weather Information:** LLM calls a weather API to provide current conditions.
 * **Calculator:** Performs arithmetic operations by calling a calculation function.
@@ -40,7 +40,7 @@ Function Calling, also known as Tool Augmentation, is a technique that enables L
 
 ---
 
-### ⚖️ Trade-offs and Challenges
+## ⚖️ Trade-offs and Challenges
 
 | Challenge          | Description                                                                    |   |
 | ------------------ | ------------------------------------------------------------------------------ | - |
@@ -51,7 +51,7 @@ Function Calling, also known as Tool Augmentation, is a technique that enables L
 
 ---
 
-### 🛠️ Hands-On Lab: Implementing Function Calling with OpenAI
+## 🛠️ Hands-On Lab: Implementing Function Calling with OpenAI
 
 **Objective:** Build a system where an LLM can call external functions to perform tasks based on user input.
 
@@ -81,7 +81,7 @@ Function Calling, also known as Tool Augmentation, is a technique that enables L
 
 ---
 
-### 📚 Additional Resources
+## 📚 Additional Resources
 
 * [How to use function calling with Azure OpenAI Service](https://learn.microsoft.com/en-us/azure/ai-services/openai/how-to/function-calling)
 * [Function Calling in OpenAI](https://platform.openai.com/docs/guides/function-calling?api-mode=responses)

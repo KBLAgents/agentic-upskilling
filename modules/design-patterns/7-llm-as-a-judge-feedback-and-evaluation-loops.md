@@ -1,8 +1,8 @@
-## LLM-as-a-Judge – Feedback and Evaluation Loops
+# LLM-as-a-Judge – Feedback and Evaluation Loops
 
 ---
 
-### 🧠 What is LLM-as-a-Judge?
+## 🧠 What is LLM-as-a-Judge?
 
 LLM-as-a-Judge refers to the practice of utilizing Large Language Models (LLMs) to evaluate and provide feedback on the outputs of other AI systems, including fellow LLMs. This approach leverages the reasoning capabilities of LLMs to assess aspects such as correctness, coherence, relevance, and safety of generated content. By automating the evaluation process, organizations can achieve scalable, consistent, and cost-effective assessments of AI outputs.([Arize AI][1])
 
@@ -15,7 +15,7 @@ LLM-as-a-Judge refers to the practice of utilizing Large Language Models (LLMs) 
 
 ---
 
-### 🏗️ Architecture Overview
+## 🏗️ Architecture Overview
 
 ![oaicite:36](https://www.aimon.ai/content_images/llm-judge-arch.svg)
 
@@ -29,7 +29,7 @@ LLM-as-a-Judge refers to the practice of utilizing Large Language Models (LLMs) 
 
 ---
 
-### 🔍 Use Cases
+## 🔍 Use Cases
 
 * **Model Benchmarking:** Comparing performance across different LLMs or model versions.
 * **Content Moderation:** Assessing generated content for adherence to guidelines and detecting inappropriate material.
@@ -38,7 +38,7 @@ LLM-as-a-Judge refers to the practice of utilizing Large Language Models (LLMs) 
 
 ---
 
-### ⚖️ Trade-offs and Challenges
+## ⚖️ Trade-offs and Challenges
 
 | Challenge                                                                                                                           | Description   |
 | ----------------------------------------------------------------------------------------------------------------------------------- | ------------- |
@@ -49,7 +49,7 @@ LLM-as-a-Judge refers to the practice of utilizing Large Language Models (LLMs) 
 
 ---
 
-### 📚 Additional Resources
+## 📚 Additional Resources
 
 * [LLM-as-a-Judge: A Complete Guide to Using LLMs for Evaluations - Evidently AI](https://www.evidentlyai.com/llm-guide/llm-as-a-judge)
 * [LLM-as-a-Judge Evaluation for GenAI Use-Cases - Arize AI](https://arize.com/blog-course/llm-as-a-judge/)

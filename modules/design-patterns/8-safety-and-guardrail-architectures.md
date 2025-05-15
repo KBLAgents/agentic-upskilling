@@ -2,7 +2,7 @@
 
 ---
 
-### 🧠 What Are Safety and Guardrail Architectures?
+## 🧠 What Are Safety and Guardrail Architectures?
 
 Safety and guardrail architectures are frameworks and mechanisms designed to monitor, control, and constrain the behavior of Large Language Models (LLMs) to ensure that their outputs align with predefined safety, ethical, and operational standards. These architectures are crucial for preventing harmful, biased, or unintended outputs, especially in applications where AI interactions have significant real-world implications.
 
@@ -15,7 +15,7 @@ Safety and guardrail architectures are frameworks and mechanisms designed to mon
 
 ---
 
-### 🏗️ Architecture Overview
+## 🏗️ Architecture Overview
 
 ![GenAI Guardrails Architecture](https://www.miquido.com/wp-content/uploads/2024/09/Generative-AI-Guardrails-700x475.png.webp)
 
@@ -29,7 +29,7 @@ Safety and guardrail architectures are frameworks and mechanisms designed to mon
 
 ---
 
-### 🔍 Use Cases
+## 🔍 Use Cases
 
 * **Content Moderation:** Filtering and managing user-generated content on platforms to prevent the spread of harmful or inappropriate material.
 * **Healthcare Applications:** Ensuring that AI-generated medical advice adheres to clinical guidelines and does not pose risks to patients.
@@ -38,7 +38,7 @@ Safety and guardrail architectures are frameworks and mechanisms designed to mon
 
 ---
 
-### ⚖️ Trade-offs and Challenges
+## ⚖️ Trade-offs and Challenges
 
 | Challenge                                                                                                                                  | Description              |
 | ------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------ |
@@ -49,15 +49,15 @@ Safety and guardrail architectures are frameworks and mechanisms designed to mon
 
 ---
 
-### 🛠️ Hands-On Lab: Implementing Safety Guardrails with Amazon Bedrock
+## 🛠️ Hands-On Lab: Implementing a responsible generative AI solution in Azure AI Foundry
 
-**Objective:** Build a system that integrates safety and guardrail mechanisms using Amazon Bedrock to ensure responsible AI outputs.
+**Objective:** Build a system that integrates safety and guardrail mechanisms using Azure AI Foundry to ensure responsible AI outputs.
 
 **Access the Lab:** [Implement a responsible generative AI solution in Azure AI Foundry](https://learn.microsoft.com/en-us/training/modules/responsible-ai-studio/?source=recommendations)
 
 ---
 
-### 📚 Additional Resources
+## 📚 Additional Resources
 
 * [Implementing LLM Guardrails for Safe and Responsible Generative AI Deployment](https://www.databricks.com/blog/implementing-llm-guardrails-safe-and-responsible-generative-ai-deployment-databricks)
 * [Responsible AI for Azure AI Foundry](https://learn.microsoft.com/en-us/azure/ai-foundry/responsible-use-of-ai-overview)

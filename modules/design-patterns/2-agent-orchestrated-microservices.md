@@ -1,8 +1,8 @@
-## Agent-Orchestrated Microservices
+# Agent-Orchestrated Microservices
 
 ---
 
-### 🧠 What is Agent-Orchestrated Microservices?
+## 🧠 What is Agent-Orchestrated Microservices?
 
 Agent-Orchestrated Microservices is an architectural pattern that combines the modularity of microservices with the autonomy of AI agents. In this setup, intelligent agents coordinate and manage microservices to perform complex tasks, enabling dynamic and adaptive system behaviors. This approach leverages the strengths of both microservices (scalability, maintainability) and AI agents (autonomy, learning) to build robust, flexible systems.
 
@@ -15,7 +15,7 @@ Agent-Orchestrated Microservices is an architectural pattern that combines the m
 
 ---
 
-### 🏗️ Architecture Overview
+## 🏗️ Architecture Overview
 
 ![oaicite:31](https://devblogs.microsoft.com/semantic-kernel/wp-content/uploads/sites/78/2024/01/microagents.png)
 
@@ -29,7 +29,7 @@ Agent-Orchestrated Microservices is an architectural pattern that combines the m
 
 ---
 
-### 🔍 Use Cases
+## 🔍 Use Cases
 
 * **E-commerce Platforms:** Agents manage services like inventory, payment processing, and user recommendations.
 * **Healthcare Systems:** Agents coordinate services for patient data management, appointment scheduling, and diagnostics.
@@ -37,7 +37,7 @@ Agent-Orchestrated Microservices is an architectural pattern that combines the m
 * **Smart Cities:** Agents orchestrate services for traffic management, energy distribution, and public safety
 ---
 
-### ⚖️ Trade-offs and Challenges
+## ⚖️ Trade-offs and Challenges
 
 | Challenge                | Description                                                                           |            |
 | ------------------------ | ------------------------------------------------------------------------------------- | ---------- |
@@ -49,7 +49,7 @@ Agent-Orchestrated Microservices is an architectural pattern that combines the m
 
 ---
 
-### 🛠️ Hands-On Lab: Implementing Agent-Orchestrated Microservices
+## 🛠️ Hands-On Lab: Implementing Agent-Orchestrated Microservices
 
 **Objective:** Build a simple system where AI agents manage and coordinate microservices to perform a composite task.
 
@@ -57,7 +57,7 @@ Agent-Orchestrated Microservices is an architectural pattern that combines the m
 
 ---
 
-### 📚 Additional Resources
+## 📚 Additional Resources
 
 * [AI Agent Orchestration - IBM](https://www.ibm.com/think/topics/ai-agent-orchestration)
 * [What is Azure AI Agent Service](https://learn.microsoft.com/en-us/azure/ai-services/agents/overview)

@@ -1,6 +1,6 @@
-##  Prompt Flow Pipelines
+#  Prompt Flow Pipelines
 
-### 🧠 What are Prompt Flow Pipelines?
+## 🧠 What are Prompt Flow Pipelines?
 
 Prompt Flow Pipelines are structured workflows that orchestrate the sequence of operations involving prompts, models, tools, and data sources to build robust and scalable LLM applications. They enable developers to design, test, evaluate, and deploy complex AI solutions by chaining together various components in a modular fashion.
 
@@ -13,7 +13,7 @@ Prompt Flow Pipelines are structured workflows that orchestrate the sequence of 
 
 ---
 
-### 🏗️ Architecture Overview
+## 🏗️ Architecture Overview
 
 ![oaicite:28](https://learn.microsoft.com/en-us/azure/machine-learning/prompt-flow/media/overview-what-is-prompt-flow/prompt-flow-lifecycle.png?view=azureml-api-2#lightbox)
 
@@ -27,7 +27,7 @@ Prompt Flow Pipelines are structured workflows that orchestrate the sequence of 
 
 ---
 
-### 🔍 Use Cases
+## 🔍 Use Cases
 
 * **Customer Support Automation:** Automate responses by integrating knowledge bases and LLMs.
 * **Content Generation:** Create structured content by orchestrating prompts and data inputs.
@@ -36,7 +36,7 @@ Prompt Flow Pipelines are structured workflows that orchestrate the sequence of 
 
 ---
 
-### ⚖️ Trade-offs and Challenges
+## ⚖️ Trade-offs and Challenges
 
 | Challenge                | Description                                                                  |   |
 | ------------------------ | ---------------------------------------------------------------------------- | - |
@@ -47,7 +47,7 @@ Prompt Flow Pipelines are structured workflows that orchestrate the sequence of 
 
 ---
 
-### 🛠️ Hands-On Lab: Implementing Prompt Flow Pipelines with Azure Machine Learning
+## 🛠️ Hands-On Lab: Implementing Prompt Flow Pipelines with Azure Machine Learning
 
 **Objective:** Build a prompt flow pipeline that integrates multiple components to perform a complex task.
 
@@ -56,7 +56,7 @@ Prompt Flow Pipelines are structured workflows that orchestrate the sequence of 
 
 ---
 
-### 📚 Additional Resources
+## 📚 Additional Resources
 
 * [Prompt flow in Azure AI Foundry portal - Learn Microsoft](https://learn.microsoft.com/en-us/azure/ai-foundry/concepts/prompt-flow)
 * [Implementing Generative AI: A Pipeline Architecture - Medium](https://medium.com/@theagipodcast/implementing-generative-ai-a-pipeline-architecture-7321e0a5cec4)
