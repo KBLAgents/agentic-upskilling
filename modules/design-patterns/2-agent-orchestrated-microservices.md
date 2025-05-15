@@ -45,6 +45,7 @@ Agent-Orchestrated Microservices is an architectural pattern that combines the m
 | **Latency:**             | Agent decision-making processes may introduce delays.                                 |            |
 | **Security:**            | Ensuring secure communication between agents and microservices is critical.           |            |
 | **Resource Management:** | Efficiently allocating resources among agents and services requires careful planning. | ([WSJ][1]) |
+| **Evaluation** | Accurately evaluating multiple agent services can be challenging |
 
 ---
 
