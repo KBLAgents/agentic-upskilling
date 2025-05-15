@@ -1,0 +1,56 @@
+# Human-in-the-Loop (HITL) Architecture
+
+## 🧠 What is Human-in-the-Loop (HITL) Architecture?
+
+Human-in-the-Loop (HITL) architecture is a design paradigm where human judgment is integrated into the AI system's decision-making process. This approach ensures that AI models can be corrected, guided, or enhanced by human input, particularly in scenarios where automated systems may face uncertainty, ethical dilemmas, or require contextual understanding.
+
+**Key Benefits:**
+
+* **Enhanced Accuracy:** Human oversight can correct AI errors, leading to more accurate outcomes.
+* **Bias Mitigation:** Humans can identify and rectify biases present in AI predictions.
+* **Transparency:** Involving humans provides clearer insights into decision-making processes.
+* **Adaptability:** Humans can adapt to novel situations that AI models haven't encountered.
+
+---
+
+## 🏗️ HITL Architecture Overview
+
+![Human-in-the-Loop Architecture Diagram](https://www.miquido.com/wp-content/uploads/2024/10/image-4-700x454.png.webp)
+
+**Components:**
+
+1. **AI Model:** Processes input data and generates predictions or decisions.
+2. **Confidence Scorer:** Evaluates the AI model's confidence in its outputs.
+3. **Human Interface:** Presents low-confidence or ambiguous cases to human reviewers.
+4. **Feedback Loop:** Integrates human corrections back into the AI model for continuous learning.
+5. **Decision Output:** Combines AI and human inputs to produce the final decision or action.
+
+---
+
+## 🔍 Use Cases
+
+* **Content Moderation:** AI filters content, but humans review borderline cases to ensure appropriate decisions.
+* **Medical Diagnosis:** AI suggests diagnoses, which are then confirmed or adjusted by medical professionals.
+* **Financial Transactions:** AI flags suspicious activities, and human analysts investigate further.
+* **Customer Support:** AI handles routine queries, escalating complex issues to human agents.
+
+---
+
+## ⚖️ Trade-offs and Challenges
+
+| Challenge               | Description                                                           |   |
+| ----------------------- | --------------------------------------------------------------------- | - |
+| **Scalability:**        | Involving humans can limit the system's ability to scale efficiently. |   |
+| **Latency:**            | Human review introduces delays in decision-making processes.          |   |
+| **Consistency:**        | Human judgments can vary, leading to inconsistent outcomes.           |   |
+| **Resource Intensive:** | Requires allocation of human resources, which can be costly.          |   |
+
+---
+
+## 📚 Additional Resources
+
+* [Human-in-the-Loop (HITL) in AI & ML - Google Cloud](https://cloud.google.com/discover/human-in-the-loop)
+* [Building Generative AI Prompt Chaining Workflows with HITL - AWS](https://aws.amazon.com/blogs/machine-learning/building-generative-ai-prompt-chaining-workflows-with-human-in-the-loop/)
+* [Designing Effective Human-in-the-Loop Systems for AI Evaluation](https://weareshaip.medium.com/designing-effective-human-in-the-loop-systems-for-ai-evaluation-e1a0588b1804)
+
+---
