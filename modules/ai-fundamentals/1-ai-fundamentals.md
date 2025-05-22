@@ -108,6 +108,17 @@ Each sub-section dives deeper into specific aspects of AI development. Access in
 
 ---
 
+### **Prompt Engineering Best Practices**
+
+- **Summary**: Comprehensive guide to advanced prompt engineering strategies, evaluation methodologies, and implementation approaches for different AI workflows.
+- **Key Questions Addressed**:
+  - How do you design, test, and manage prompts for specific business scenarios?
+  - What are the best approaches for evaluating and improving prompt effectiveness?
+  - How can prompt engineering be integrated into an AI orchestration framework?
+- **Link**: [Go to Prompt Engineering Best Practices](./10-prompt-engineering-best-practices.md)
+
+---
+
 ## **Conclusion**
 
 This outline provides a comprehensive guide to understanding AI Fundamentals, with links to resources for deeper exploration into specialized topics. By using this document, practitioners and learners can navigate the complex world of AI development efficiently and effectively.
